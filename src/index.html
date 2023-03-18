@@ -13,25 +13,96 @@
       <header>
         <div class="bienvenido"><h1> BIENVENIDOS AL MUNDO DE</h1></div>
         <div class="harrypotter_titulo"><img src="data/Images/harrypotter_titulo.png" width="557px" height="284px"></div>
-        <form>
+        <form class="reproductor">
+          <p>Soundtrack</p>
           <button id="music"></button>
         </form>
-        <nav>  
-          <a href="#">Registrate</a>
-          <a href="#">Datos curiosos</a>
-          <a href="#">Noticias</a>
-          <a href="#">Marketplace</a>
-        </nav>
+        <div class="navegador">
+          <nav>  
+            <a href="#">Registrate</a>
+            <a href="#">Datos curiosos</a>
+            <a href="#">Noticias</a>
+            <a href="#">Marketplace</a>
+          </nav>
+        </div>
       </header>
       <main>
-        <h2>Te presentamos las principales categorias de tu saga favorita</h2>
-        <div class="categories">
-        <h3>PERSONAJES</h3>
-        <h3>CASAS</h3>
-        <h3>HECHIZOS</h3>
-        <h3>POCIONES</h3>
-        <h3>LIBROS</h3>
-        </div>
+        <section id="categories">
+          <div class="presentacion">
+            <h2>Te presentamos las principales categorias de tu saga favorita</h2>
+          </div>
+          <div class="threecategories">
+            <div id="personajes">
+              <img src="data/Images/characters.png" width="222px" height="333px">
+              <h3>PERSONAJES</h3>
+              <Button></Button>
+            </div>
+          
+            <div class="casas">
+              <img src="data/Images/casas.png" width="266px" height="289px">
+              <h3>CASAS</h3>
+              <Button></Button>
+            </div>
+
+            <div class="hechizos">
+              <img src="data/Images/varita.png" width="411px" height="299px">
+              <h3>HECHIZOS</h3>
+              <Button></Button>
+            </div>
+          </div>
+          
+          <div class="twocategories">
+            <div class="pociones">
+              <img src="" width="222px" height="333px">
+              <h3>POCIONES</h3>
+              <Button></Button>
+            </div>
+
+            <div class="libros">
+              <img src="data/Images/libros.png" width="266px" height="236px">
+              <h3>LIBROS</h3>
+              <Button></Button>
+            </div>
+          </div>
+        </section>
+
+        <section id="section-characters">
+          <div class="characters-title">
+            <h2>PERSONAJES</h2>
+          </div>
+
+          <section class="contenedorcards">
+            <section class="characters-card1">
+
+              <div class="bottom-card">  
+                <div class="nombresection">
+                  <h3>HARRY <br />POTTER</h3>
+                  <div class="escudo">
+                  <img src="data/Images/gryffindor.png" width="90px" height="84px">
+                  </div> 
+                </div>
+                <img id="harry" src="data/Images/harrypotter_cha.png" width="144.47px" height="213.94px">
+              </div>
+            </section>
+
+            <section class="characters-card2">
+
+              <div class="bottom-card">  
+                <div class="nombresection">
+                  <h3>HARRY <br />POTTER</h3>
+                  <div class="escudo">
+                  <img src="data/Images/gryffindor.png" width="90px" height="84px">
+                  </div> 
+                </div>
+                <img id="harry" src="data/Images/harrypotter_cha.png" width="144.47px" height="213.94px">
+              </div>
+              
+            </section>
+
+
+          </section>
+
+        </section>
       </main>
     
     <div id="root"></div>
