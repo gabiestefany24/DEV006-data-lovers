@@ -3,19 +3,15 @@ body {
     background-color: #050e17;
     font-family: 'Jost', sans-serif;
     color: #ffc773;
-    
-    
 }
 
 header {
-    
     background-image: url("data/Images/hogwarts-family-wallpaper-1600x480_68.jpg");
     background-repeat:no-repeat;
     margin-top:-50px;
     margin-left: -10px;
     margin-right: -10px;
     padding-top: 100px;
-    padding-bottom: 100px;  
 
 }
 
@@ -24,24 +20,30 @@ a {
     text-decoration: none;
     color:#ffc773;
     letter-spacing: 0.275em;
- 
-
 }
 
+.navegador{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
 nav{
     display:flex;
     justify-content: space-around;
-    margin-top: -100px;
+    margin-top: -70px;
     width:50vw;
-    margin-left: 380px;
-    
 } 
 
 .categories {
     letter-spacing: 0.27em;
 }
 
-
+.reproductor{
+    position:absolute;
+    left: 71px;
+    top: 450px;
+    cursor:pointer;
+}
 #music{
     background-image: url("data/Images/reproducir-pausar.png");
     background-size: 43px 49px;
@@ -50,6 +52,7 @@ nav{
     height: 49px;
     background-repeat:no-repeat;
     background-color: transparent;
+    
 }
 
 .harrypotter_titulo {
@@ -57,7 +60,6 @@ nav{
     width: 100%;
     justify-content: center;
     margin-top: -60px;
-    
 }
 
 h1{
@@ -71,5 +73,119 @@ h1{
     width: 100%;
     justify-content: center;
     margin-top: 180px;
+}
+
+.presentacion{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+h2{
+    font-size: 20px;
+    letter-spacing: 0.275em;
+}
+#categories{
+    margin-top:50px;
+}
+#categories button{
+    width: 279px;
+    height: 210px;
+    background-color: transparent;
+    border: 1px solid #FFC773;
+}
+#categories h3{
+    letter-spacing: 0.275em;
+    font-weight: 400;
+    font-size: 40px;
+}
+
+/*posicionamiento de cards*/
+
+
+.threecategories img,.threecategories h3{
+    position: absolute;
+}
+.threecategories{
+    display: flex;
+    margin-top:100px;
+    justify-content: space-around;
+    align-items: center;
+}
+#personajes, .casas, .hechizos, .pociones, .libros{
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.twocategories img, .twocategories h3{
+    position: absolute;
+}
+
+.twocategories {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+
+/*section characters*/
+
+#section-characters h3{
+    font-weight: 400;
+    font-size: 25px;
+    letter-spacing: 0.275em;
+}
+
+.characters-title h2{
+    font-weight: 400;
+    font-size: 40px;
+}
+.characters-title{
+    display: flex;
+    margin-top:100px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+.characters-card1, .characters-card2{
+    width: 234.86px;
+    height: 198.17px;
+    border-radius: 30px;
+    background: #271313;
+    border:0;
+}
+
+
+.escudo{
+    display: flex;
+    align-items: flex-end;
+}
+.contenedorcards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1280px;
+    gap: 100px;
+}
+
+.bottom-card{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    gap:30px;
+
+}
+.nombresection{
+    display: flex;
+    flex-direction: column;
     
+}
+.nombresection h3{
+    margin-left:40%;
+    margin-top:50%;
 }
