@@ -1,10 +1,9 @@
-import { example } from './data.js';
+import { filterObj } from './data.js';
 // import data from './data/lol/lol.js';
-import data from './data/pokemon/pokemon.js';
+import data from './data/harrypotter/data.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
-console.log(example, data);
-
+const button_charactergriffindor= document.getElementById("charactergriffindor");
 const button_home =document.getElementById("inicio");
 const section_books= document.getElementById("section-books");
 const section_potions=document.getElementById("section-potions");
@@ -23,7 +22,7 @@ const potion_instructions = document.getElementById("potion-instructions");
 
 SectionHome();
 
-
+button_charactergriffindor.addEventListener("click", FilterCharacGriffindor);
 button_characters.addEventListener("click", SectionCharacters);
 button_books.addEventListener("click", SectionBooks);
 button_potions.addEventListener("click", SectionPotions);
@@ -48,6 +47,14 @@ function SectionCharacters(){
     section_home.style.display = "none";
     section_characters.style.display = "block";
 }
+
+function FilterCharacGriffindor(){
+
+    
+        console.log("funciona");
+        const objectfiltrated = filterObj(data.characters);
+        console.log(objectfiltrated);
+      } 
 
 
 
