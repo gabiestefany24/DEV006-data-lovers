@@ -5,6 +5,7 @@ import data from './data/pokemon/pokemon.js';
 
 console.log(example, data);
 
+const button_home =document.getElementById("inicio");
 const section_books= document.getElementById("section-books");
 const section_potions=document.getElementById("section-potions");
 const section_spell = document.getElementById("section-spell")
@@ -20,12 +21,7 @@ const potion1=document.getElementById("potion1-name");
 const potion2=document.getElementById("potion2-name");
 const potion_instructions = document.getElementById("potion-instructions");
 
-section_home.style.display = "block";
-section_characters.style.display = "none";
-section_houses.style.display = "none";
-section_spell.style.display = "none";
-section_books.style.display="none";
-section_potions.style.display="none";
+SectionHome();
 
 
 button_characters.addEventListener("click", SectionCharacters);
@@ -33,7 +29,16 @@ button_books.addEventListener("click", SectionBooks);
 button_potions.addEventListener("click", SectionPotions);
 button_houses.addEventListener("click", SectionHouses);
 button_spell.addEventListener("click", SectionSpell);
+button_home.addEventListener("click", SectionHome);
 
+function SectionHome(){
+    section_home.style.display = "block";
+    section_characters.style.display = "none";
+    section_houses.style.display = "none";
+    section_spell.style.display = "none";
+    section_books.style.display="none";
+    section_potions.style.display="none";
+}
 
 function SectionCharacters(){
     section_potions.style.display="none";
