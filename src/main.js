@@ -3,6 +3,7 @@ import { filterObj } from './data.js';
 import data from './data/harrypotter/data.js';
 // import data from './data/rickandmorty/rickandmorty.js';
 
+const contenedortarjetas= document.getElementById("contenedorcards");
 const button_charactergriffindor= document.getElementById("charactergriffindor");
 const button_home =document.getElementById("inicio");
 const section_books= document.getElementById("section-books");
@@ -39,6 +40,24 @@ function SectionHome(){
     section_potions.style.display="none";
 }
 
+function Showcharacters(arrayfiltrated){
+    arrayfiltrated.forEach((character) => {
+    let optioncharacter =  `<section class="characters-card1">
+
+    <div class="bottom-card">  
+      <div class="nombresection">
+        <h3>${character.name}</h3>
+        <div class="escudo">
+        <img src="data/Images/gryffindor.png" width="90px" height="84px">
+        </div> 
+      </div>
+      <img id="harry" src="data/Images/harrypotter_cha.png" width="144.47px" height="213.94px">
+    </div>
+  </section> `   
+  contenedortarjetas.innerHTML += optioncharacter;
+})}
+
+
 function SectionCharacters(){
     section_potions.style.display="none";
     section_spell.style.display = "none";
@@ -53,7 +72,7 @@ function FilterCharacGriffindor(){
     
         console.log("funciona");
         const objectfiltrated = filterObj(data.characters);
-        console.log(objectfiltrated);
+        Showcharacters(objectfiltrated);
       } 
 
 

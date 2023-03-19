@@ -294,7 +294,7 @@ a {
     display: flex;
     align-items: flex-end;
 }
-.contenedorcards{
+#contenedorcards{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
