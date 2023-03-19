@@ -132,7 +132,16 @@ h2{
     align-items: center;
     margin-top: 100px;
 }
-
+#potionazul{
+    margin-right: 7%;
+}
+#potionverde{
+    margin-left: 7%;
+    z-index:-1;
+}
+#potionrojo{
+    margin-top: 5%;
+}
 /*section characters*/
 
 #section-characters h3{
@@ -315,12 +324,15 @@ h2{
     justify-content: center;
 }
 #fondopociones{
-    position: absolute;
+    position: inherit;
     margin-top:-700px;
+    margin-left:-300px;
 }
 
 .potions-name{
-    background-color: #271313;
+    border-radius: 50px;
+    padding:10px;
+    background: linear-gradient(#050e17, #102131); 
 }
 
 .potions-name span{
@@ -330,7 +342,7 @@ h2{
     color: #FFFFFF;
     letter-spacing: 0.275em;
     cursor: pointer;
-    margin:20px;
+    margin:20px;  
 }
 
 .potions-threecolumns{
@@ -339,7 +351,13 @@ h2{
     justify-content: space-around;
     margin: 130px;
 }
-
+#caldero{
+    position:absolute;
+    margin-left: 46%;
+    margin-top:2%;
+    /*posicionar elemento absoluto detras de elemento relativo*/
+    z-index:-1;
+}
 #potion-instructions{
     font-size: 30px;
     color: #FFFFFF;
@@ -361,12 +379,9 @@ h2{
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    max-width: 1000px;
     gap: 300px;
     border: 0;
     margin-bottom: 50px;
-    margin-left: 250px;
     margin-top: 50px;
   
 }
