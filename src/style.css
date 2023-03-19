@@ -8,6 +8,8 @@ body {
 header {
     background-image: url("data/Images/hogwarts-family-wallpaper-1600x480_68.jpg");
     background-repeat:no-repeat;
+    background-size: 100% 480px;
+
     margin-top:-50px;
     margin-left: -10px;
     margin-right: -10px;
@@ -112,7 +114,8 @@ h2{
     justify-content: space-around;
     align-items: center;
 }
-#personajes, #casas, #hechizos, .pociones, .libros{
+
+#personajes, #casas, #hechizos, #pociones, #libros{
     cursor:pointer;
     display: flex;
     justify-content: center;
@@ -136,26 +139,71 @@ h2{
     font-weight: 400;
     font-size: 25px;
     letter-spacing: 0.275em;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 50px;
 }
 
-.characters-title h2{
+.sections-title h2{
     font-weight: 400;
     font-size: 40px;
 }
-.characters-title{
+.sections-title{
     display: flex;
-    margin-top:100px;
+    margin-top:50px;
     justify-content: space-around;
     align-items: center;
+    margin-bottom: 50px;
 }
 
 
-.characters-card1, .characters-card2{
+.characters-card1{
     width: 234.86px;
     height: 198.17px;
     border-radius: 30px;
     background: #271313;
     border:0;
+}
+
+.characters-card2{
+    width: 234.86px;
+    height: 198.17px;
+    border-radius: 30px;
+    background: #112514;
+    border:0; 
+}
+
+.characters-card4{
+    width: 234.86px;
+    height: 198.17px;
+    border-radius: 30px;
+    background: #271313;
+    border:0; 
+}
+
+.characters-card3{
+    width: 234.86px;
+    height: 198.17px;
+    border-radius: 30px;
+    background: #0C1127;
+    border:0; 
+}
+
+.characters-card5{
+    width: 234.86px;
+    height: 198.17px;
+    border-radius: 30px;
+    background:  #3C370B;
+    border:0; 
+}
+
+
+.characters-card6{
+    width: 234.86px;
+    height: 198.17px;
+    border-radius: 30px;
+    background: #271313;
+    border:0; 
 }
 
 
@@ -169,25 +217,134 @@ h2{
     justify-content: center;
     align-items: center;
     width: 100%;
-    max-width: 1280px;
-    gap: 100px;
+    gap:120px;
+   
 }
 
 .bottom-card{
     display:flex;
     flex-direction: row;
-    justify-content: center;
-    gap:30px;
-
+    gap: 50px;
 }
-.nombresection{
+.nombresection img{
     display: flex;
     flex-direction: column;
-    
+    margin-top: 150px;
+    margin-left:-20px;
+    margin-left: -40px;
 }
+
 .nombresection h3{
     margin-left:40%;
     margin-top:50%;
+}
+
+/*LIBROS*/
+
+.container-containerbooks{
+    margin: 70px;
+}
+.containerbooks {
+    display: flex;
+    height: 430px;
+    display:flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.containerbooks img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    filter: grayscale(1);
+}
+
+.containerbooks img:hover{
+    filter:none;
+    width: 300px;
+}
+.author h3{
+    display: flex;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 20px;
+    text-align: center;
+    justify-content: right;
+}
+.author h4{
+    font-weight: 400;
+    font-size: 15px;
+    margin: 20px;
+    color: #FFFFFF;
+}
+
+.author{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.description{
+    width:500px;
+    height:98px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background: rgba(58, 72, 78, 0.23);
+}
+
+/*pociones*/
+
+.potions-description{
+    width: 384px;
+    height: 374px;
+    background: url("data/Images/fondopociones__1_.png");
+    background-size: 100% 100%;
+    border: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+
+.container-fondopociones{
+    display: flex;
+    justify-content: center;
+}
+#fondopociones{
+    position: absolute;
+    margin-top:-700px;
+}
+
+.potions-name{
+    background-color: #271313;
+}
+
+.potions-name span{
+    display:flex;
+    font-weight: 400;
+    font-size: 25px;
+    color: #FFFFFF;
+    letter-spacing: 0.275em;
+    cursor: pointer;
+    margin:20px;
+}
+
+.potions-threecolumns{
+    display:flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    margin: 130px;
+}
+
+#potion-instructions{
+    font-size: 30px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 500;
 }
 
 /*section houses*/
