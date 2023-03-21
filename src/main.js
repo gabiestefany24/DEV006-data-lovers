@@ -24,19 +24,29 @@ const potion1=document.getElementById("potion1-name");
 const potion2=document.getElementById("potion2-name");
 const potion_instructions = document.getElementById("potion-instructions");
 
-SectionHome();
+const griffindor = "Gryffindor";
+const slytherin = "Slytherin";
+const ravenclaw = "Ravenclaw";
+const hufflepuff = "Hufflepuff";
+
+button_charactergriffindor.addEventListener("click", FilterCharacter(griffindor));
+button_characterslytherin.addEventListener("click", FilterCharacter(slytherin));
+button_characterravenclaw.addEventListener("click", FilterCharacter(ravenclaw ));
+button_characterhufflepuff.addEventListener("click", FilterCharacter(hufflepuff));
 
 
-button_charactergriffindor.addEventListener("click", FilterCharacGriffindor);
-button_characterslytherin.addEventListener("click", FilterCharacSlytherin);
-button_characterravenclaw.addEventListener("click", FilterCharacRavenclaw);
-button_characterhufflepuff.addEventListener("click", FilterCharacHufflepuff);
 button_characters.addEventListener("click", SectionCharacters);
 button_books.addEventListener("click", SectionBooks);
 button_potions.addEventListener("click", SectionPotions);
 button_houses.addEventListener("click", SectionHouses);
 button_spell.addEventListener("click", SectionSpell);
 button_home.addEventListener("click", SectionHome);
+
+
+SectionHome();
+
+//inyectar valores a characters
+
 
 function SectionHome(){
     section_home.style.display = "block";
@@ -47,71 +57,6 @@ function SectionHome(){
     section_potions.style.display="none";
 }
 
-function ShowcharactersGryffindor(arrayfiltrated){
-    arrayfiltrated.forEach((character) => {
-    let optioncharacter =  
-    `<section class="characters-card1">
-     <div class="bottom-card">  
-      <div class="nombresection">
-        <h3>${character.name}</h3>
-        <div class="escudo">
-        <img src="data/Images/gryffindor.png" width="90px" height="84px">
-        </div> 
-      </div>
-     </div>
-    </section> `   
-  contenedortarjetas.innerHTML += optioncharacter;
-})}
-
-function ShowcharactersSlytherin(arrayfiltrated){
-  arrayfiltrated.forEach((character) => {
-  let optioncharacter =  
-  `<section class="characters-card2">
-  <div class="bottom-card">  
-    <div class="nombresection">
-      <h3>${character.name}</h3>
-      <div class="escudo">
-      <img src="data/Images/slytherin (6).png" width="90px" height="84px">
-      </div> 
-    </div>
-  </div>
-</section> `   
-contenedortarjetas.innerHTML += optioncharacter;
-})}
-
-function ShowcharactersRavenclaw(arrayfiltrated){
-  arrayfiltrated.forEach((character) => {
-  let optioncharacter =  
-  `<section class="characters-card3">
-   <div class="bottom-card">  
-    <div class="nombresection">
-      <h3>${character.name}</h3>
-      <div class="escudo">
-       <img src="data/Images/RAVENCLAW.png" width="90px" height="84px">
-      </div> 
-    </div>              
- </div>
- </section> ` 
-contenedortarjetas.innerHTML += optioncharacter;
-})} 
-
-
-function ShowcharactersHufflepuff(arrayfiltrated){
-  arrayfiltrated.forEach((character) => {
-  let optioncharacter =
-   `<section class="characters-card5">
-    <div class="bottom-card">  
-     <div class="nombresection">
-        <h3>${character.name}</h3>
-        <div class="escudo">
-          <img src="data/Images/HUFFLEPUFF.png" width="90px" height="84px">
-        </div> 
-     </div>
-    </div>
-    </section>`
-contenedortarjetas.innerHTML += optioncharacter;
-})} 
-
 
 function SectionCharacters(){
     section_potions.style.display="none";
@@ -120,6 +65,8 @@ function SectionCharacters(){
     section_houses.style.display = "none";
     section_home.style.display = "none";
     section_characters.style.display = "block";
+
+
     contenedortarjetas.innerHTML=`<section class="characters-card1">
 
     <div class="bottom-card">  
@@ -138,7 +85,7 @@ function SectionCharacters(){
       <div class="nombresection">
         <h3>DRACO <br />MALFOY</h3>
         <div class="escudo">
-        <img src="data/Images/slytherin (6).png" width="90px" height="84px">
+        <img src="data/Images/slytherin.png" width="90px" height="84px">
         </div> 
       </div>
       <img id="harry" src="data/Images/character_5.png" width="144.47px" height="213.94px">
@@ -150,7 +97,7 @@ function SectionCharacters(){
       <div class="nombresection">
         <h3>LUNA<br/>LOVEGOOD</h3>
         <div class="escudo">
-        <img src="data/Images/RAVENCLAW.png" width="90px" height="84px">
+        <img src="data/Images/ravenclaw.png" width="90px" height="84px">
         </div> 
       </div>
       <img id="harry" src="data/Images/pngegg (2).png" width="144.47px" height="213.94px">
@@ -174,7 +121,7 @@ function SectionCharacters(){
       <div class="nombresection">
         <h3>CEDRIC<br/>DIAGORY</h3>
         <div class="escudo">
-        <img src="data/Images/HUFFLEPUFF.png" width="90px" height="84px">
+        <img src="data/Images/hufflepuff.png" width="90px" height="84px">
         </div> 
       </div>
       <img id="harry" src="data/Images/harry-potter-and-the-goblet-of-fire-cedric-diggory.png" width="144.47px" height="213.94px">
@@ -195,33 +142,62 @@ function SectionCharacters(){
 
 }
 
-function FilterCharacGriffindor(){
-        console.log("funciona");
-        contenedortarjetas.innerHTML=""
-        const objectfiltrated = filterObj(data.characters, "Gryffindor");
-        ShowcharactersGryffindor(objectfiltrated);
-      } 
+function FilterCharacter(house){
+  return function () {
+    contenedortarjetas.innerHTML=""
+    const objectfiltrated = filterObj(data.characters, house);
+    PushContent(objectfiltrated,house);
+    
+  }
+} 
 
-function FilterCharacSlytherin(){
-  console.log("funciona");
-  contenedortarjetas.innerHTML=""
-  const objectfiltrated = filterObj(data.characters, "Slytherin");
-  ShowcharactersSlytherin(objectfiltrated);
+function PushContent(arraypushed,house){
+  if (house === "Gryffindor"){
+    arraypushed.forEach(object => {
+    object.color = "#271313"
+    object.image = "data/Images/gryffindor.png"
+})  
+}
+  else if (house === "Slytherin"){
+  arraypushed.forEach(object => {
+  object.color = "#112514"
+  object.image = "data/Images/slytherin.png"
+
+})} else if (house === "Ravenclaw"){
+  arraypushed.forEach(object => {
+  object.color = "#0C1127"
+  object.image = "data/Images/ravenclaw.png"
+
+})} else if (house === "Hufflepuff"){
+  arraypushed.forEach(object => {
+  object.color = "#3C370B"
+  object.image = "data/Images/hufflepuff.png"
+})}
+const newarray= arraypushed;
+ShowFiltratedChara(newarray);
 }
 
-function FilterCharacRavenclaw(){
-  console.log("funciona");
-  contenedortarjetas.innerHTML=""
-  const objectfiltrated = filterObj(data.characters, "Ravenclaw");
-  ShowcharactersRavenclaw(objectfiltrated);
-}
 
-function FilterCharacHufflepuff(){
-  console.log("funciona");
-  contenedortarjetas.innerHTML=""
-  const objectfiltrated = filterObj(data.characters, "Hufflepuff");
-  ShowcharactersHufflepuff(objectfiltrated);
-}  
+function ShowFiltratedChara(array){
+  array.forEach((character) => {
+  let optioncharacter =  
+  `<section class="characters-card1">
+   <div class="bottom-card">  
+    <div class="nombresection">
+      <h3>${character.name}</h3>
+      <div class="escudo">
+      <img src="${character.image}" width="90px" height="84px">
+      </div> 
+    </div>
+   </div>
+  </section>    
+  <style>
+    .characters-card1{
+      background-color: ${character.color};
+    }`
+contenedortarjetas.innerHTML += optioncharacter;
+})}
+
 
 
 function SectionHouses(){
@@ -269,7 +245,7 @@ function SectionPotions(){
     
 }
 function CambioDescripcion(description){
-        return function () {
-            potion_instructions.innerHTML=description;
-        };
-        }
+  return function () {
+    potion_instructions.innerHTML=description;
+  };
+}
