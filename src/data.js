@@ -1,9 +1,11 @@
 // estas funciones son de ejemplo
 
-export const example = () => {
-  return 'example';
+export const filterObj = (categories,house) => {
+  var newArray = categories.filter((key) => key.house === house);
+ 
+  return newArray;
+
+
 };
 
-export const anotherExample = () => {
-  return 'OMG';
-};
+
