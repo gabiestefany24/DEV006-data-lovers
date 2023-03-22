@@ -146,11 +146,12 @@ h2{
 
 #section-characters h3{
     font-weight: 400;
-    font-size: 25px;
-    letter-spacing: 0.275em;
+    font-size: 18px;
     position: absolute;
     margin-left: 20px;
     margin-top: 50px;
+    width: 100px;
+    letter-spacing: 0.275em;
 }
 
 .sections-title h2{
