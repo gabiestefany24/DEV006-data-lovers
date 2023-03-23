@@ -1,6 +1,4 @@
-import {
-  filterObj
-} from './data.js';
+import { filterObj } from './data.js';
 
 import { sortObj } from './data.js';
 import { sortObjaz } from './data.js';
@@ -45,7 +43,7 @@ button_characterravenclaw.addEventListener("click", FilterCharacter(ravenclaw));
 button_characterhufflepuff.addEventListener("click", FilterCharacter(hufflepuff));
 button_characterhomeless.addEventListener("click", FilterCharacter(none));
 button_sortZA.addEventListener ("click", SortPotionsZA());
-/*button_sortAZ.addEventListener ("click", SortPotionsAZ());*/
+button_sortAZ.addEventListener ("click", SortPotionsAZ());
 
 button_characters.addEventListener("click", SectionCharacters);
 button_books.addEventListener("click", SectionBooks);
@@ -318,12 +316,24 @@ function ShowPotions(array) {
       `<span id ="${p.id}">${p.name}</span>`
     contenedorpotions.innerHTML += optionPotionName;
   })
-
     for (let i=1; i<=array.length; i++) {
-
     const identificadorpocionId = document.getElementById(i)
     identificadorpocionId.addEventListener('click', function () {
-      potion_instructions.innerHTML=""
+      potion_instructions.innerHTML = array[i-1].description;
+    });
+  } 
+}
+
+function ShowPotionsZA(array) {
+  let optionPotionName 
+  array.forEach((p) => {
+    optionPotionName=
+      `<span id ="${p.id}">${p.name}</span>`
+    contenedorpotions.innerHTML += optionPotionName;
+  })
+    for (let i=1; i<=array.length; i++) {
+    const identificadorpocionId = document.getElementById(151-i)
+    identificadorpocionId.addEventListener('click', function () {
       potion_instructions.innerHTML = array[i-1].description;
     });
   } 
@@ -332,11 +342,17 @@ function SortPotionsZA(){
   return function (){
   contenedorpotions.innerHTML=""
   const sortpotions= sortObj(data.potions);
-  
-
+  ShowPotionsZA(sortpotions)
+  }
+}
+function SortPotionsAZ(){
+  return function (){
+  contenedorpotions.innerHTML=""
+  const sortpotions= sortObjaz(data.potions);
+  console.log(sortObjaz(data.potions))
   ShowPotions(sortpotions)
-  
+  }
 }
-}
+
 
 

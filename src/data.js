@@ -11,7 +11,7 @@ export const sortObj = (categories) => {
 };
 
 export const sortObjaz = (categories) => {
-  categories.sort((a,b) => a.name > b.name? -1:1);
+  categories.sort((a,b) => a.name > b.name? 1:-1);
   return categories;
 };
 
