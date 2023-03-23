@@ -382,6 +382,28 @@ a {
 
 /*pociones*/
 
+#button-sortAZ{
+    background: #18232D;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    letter-spacing: 5px;
+    font-size: 20px;
+    margin-left: 220px;
+    
+
+}
+
+#button-sortZA{
+    background: #18232D;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    letter-spacing: 5px;
+    font-size: 20px;
+     
+}
+
 .potions-description{
     width: 384px;
     height: 374px;
@@ -409,6 +431,20 @@ a {
     border-radius: 50px;
     padding:10px;
     background: linear-gradient(#050e17, #102131); 
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 400px;
+    width: 400px;
+}
+::-webkit-scrollbar{
+
+    width: 15px;
+    
+}
+::-webkit-scrollbar-thumb{
+    background-color:rgba(195, 204, 202, 0.988);
+    border-radius:15px;
+
 }
 
 #potions-name span{
@@ -429,7 +465,7 @@ a {
 }
 #caldero{
     position:absolute;
-    margin-left: 46%;
+    margin-left: 43%;
     margin-top:2%;
     /*posicionar elemento absoluto detras de elemento relativo*/
     z-index:-1;
@@ -479,21 +515,32 @@ a {
 }
 
 /*section spell*/
+/*
+#section-spell{
+top:-800px;
+}*/
+
 
 #section-spell h2{
     font-weight: 400;
     font-size: 40px;
     letter-spacing: 0.275em;
     text-align: center;
+    margin-top:-500px;
+
 }
 
-.spellhermione{
-    position: absolute;
+
+.spellhermione{  
     width: 272px;
     height: 543px;
     left: 34px;
-    top: 1680px;
-
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin-top: 50px;
+    
+   
 
 }
 .spellmain{
@@ -501,6 +548,7 @@ a {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin-top:-60px;
 }
 .spelldescription{
     padding: 50px;
