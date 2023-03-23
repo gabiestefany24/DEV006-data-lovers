@@ -246,7 +246,7 @@ function ShowCharacters(array) {
           <img id="harry" src="data/Images/${p.img}" width="144.47px" height="213.94px">
         </div>
       </section>    
-    `
+
 
     styles += `.p${p.id} {
     width: 234.86px;
