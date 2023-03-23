@@ -1,8 +1,9 @@
 import {
   filterObj
 } from './data.js';
-//import { sortObj } from './data.js';
 
+import { sortObj } from './data.js';
+import { sortObjaz } from './data.js';
 import data from './data/harrypotter/data.js';
 
 const character = data.characters;
@@ -10,7 +11,8 @@ const contenedortarjetas = document.getElementById("contenedorcards");
 const contenedorpotions = document.getElementById("potions-name");
 
 const selectedhouse = document.getElementById("selectedhouse");
-//const button_sort = document.getElementById("button-sort");
+const button_sortZA = document.getElementById("button-sortZA");
+const button_sortAZ = document.getElementById("button-sortAZ");
 const button_charactergriffindor = document.getElementById("charactergriffindor");
 const button_characterslytherin = document.getElementById("characterslytherin");
 const button_characterravenclaw = document.getElementById("characterravenclaw");
@@ -42,8 +44,8 @@ button_characterslytherin.addEventListener("click", FilterCharacter(slytherin));
 button_characterravenclaw.addEventListener("click", FilterCharacter(ravenclaw));
 button_characterhufflepuff.addEventListener("click", FilterCharacter(hufflepuff));
 button_characterhomeless.addEventListener("click", FilterCharacter(none));
-//button_sort.addEventListener ("click", SortPotions());
-
+button_sortZA.addEventListener ("click", SortPotionsZA());
+/*button_sortAZ.addEventListener ("click", SortPotionsAZ());*/
 
 button_characters.addEventListener("click", SectionCharacters);
 button_books.addEventListener("click", SectionBooks);
@@ -310,21 +312,33 @@ function SectionPotions() {
 }
 
 function ShowPotions(array) {
+  let optionPotionName 
   array.forEach((p) => {
-    const optionPotionName =
+    optionPotionName=
       `<span id ="${p.id}">${p.name}</span>`
     contenedorpotions.innerHTML += optionPotionName;
   })
-  for (let i = 1; i <= array.length; i++) {
+
+  
+    for (let i=1; i<=array.length; i++) {
+
     const identificadorpocionId = document.getElementById(i)
     identificadorpocionId.addEventListener('click', function () {
-      potion_instructions.innerHTML = array[i - 1].description;
+      potion_instructions.innerHTML=""
+      potion_instructions.innerHTML = array[i-1].description;
     });
   }
+   
+}
+function SortPotionsZA(){
+  return function (){
+  contenedorpotions.innerHTML=""
+  const sortpotions= sortObj(data.potions);
+  
+
+  ShowPotions(sortpotions)
+  
+}
 }
 
-/*
-function SortPotions(){
 
-}
-*/
