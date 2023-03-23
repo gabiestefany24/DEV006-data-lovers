@@ -316,7 +316,7 @@ function ShowPotions(array) {
       `<span id ="${p.id}">${p.name}</span>`
     contenedorpotions.innerHTML += optionPotionName;
   })
-    for (let i=1; i<=array.length; i++) {
+  for (let i=1; i<=array.length; i++) {
     const identificadorpocionId = document.getElementById(i)
     identificadorpocionId.addEventListener('click', function () {
       potion_instructions.innerHTML = array[i-1].description;
@@ -331,7 +331,7 @@ function ShowPotionsZA(array) {
       `<span id ="${p.id}">${p.name}</span>`
     contenedorpotions.innerHTML += optionPotionName;
   })
-    for (let i=1; i<=array.length; i++) {
+  for (let i=1; i<=array.length; i++) {
     const identificadorpocionId = document.getElementById(151-i)
     identificadorpocionId.addEventListener('click', function () {
       potion_instructions.innerHTML = array[i-1].description;
@@ -340,17 +340,16 @@ function ShowPotionsZA(array) {
 }
 function SortPotionsZA(){
   return function (){
-  contenedorpotions.innerHTML=""
-  const sortpotions= sortObj(data.potions);
-  ShowPotionsZA(sortpotions)
+    contenedorpotions.innerHTML=""
+    const sortpotions= sortObj(data.potions);
+    ShowPotionsZA(sortpotions)
   }
 }
 function SortPotionsAZ(){
   return function (){
-  contenedorpotions.innerHTML=""
-  const sortpotions= sortObjaz(data.potions);
-  console.log(sortObjaz(data.potions))
-  ShowPotions(sortpotions)
+    contenedorpotions.innerHTML=""
+    const sortpotions= sortObjaz(data.potions);
+    ShowPotions(sortpotions)
   }
 }
 
