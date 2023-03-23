@@ -245,7 +245,7 @@ function ShowCharacters(array) {
           </div>
           <img id="harry" src="data/Images/${p.img}" width="144.47px" height="213.94px">
         </div>
-      </section>    
+      </section>`
 
 
     styles += `.p${p.id} {
@@ -253,7 +253,7 @@ function ShowCharacters(array) {
     height: 198.17px;
     border-radius: 30px;
     border:0;
-    background: ${p.color}}`;
+    background: ${p.color}}`
     tarjetas += optioncharacter;
   })
   contenedortarjetas.innerHTML = tarjetas;
@@ -319,7 +319,6 @@ function ShowPotions(array) {
     contenedorpotions.innerHTML += optionPotionName;
   })
 
-  
     for (let i=1; i<=array.length; i++) {
 
     const identificadorpocionId = document.getElementById(i)
@@ -327,8 +326,7 @@ function ShowPotions(array) {
       potion_instructions.innerHTML=""
       potion_instructions.innerHTML = array[i-1].description;
     });
-  }
-   
+  } 
 }
 function SortPotionsZA(){
   return function (){
