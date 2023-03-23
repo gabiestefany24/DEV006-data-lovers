@@ -227,8 +227,6 @@ const sheet = document.createElement('style')
 
 function ShowCharacters(array){
   array.forEach((p) => {
- 
-
     const optioncharacter =  
   `<section class="p${p.id}">
     <div class="bottom-card">  
