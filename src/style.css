@@ -405,13 +405,13 @@ a {
     margin-left:-300px;
 }
 
-.potions-name{
+#potions-name{
     border-radius: 50px;
     padding:10px;
     background: linear-gradient(#050e17, #102131); 
 }
 
-.potions-name span{
+#potions-name span{
     display:flex;
     font-weight: 400;
     font-size: 25px;
