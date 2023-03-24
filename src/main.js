@@ -332,7 +332,7 @@ function ShowPotionsZA(array) {
     contenedorpotions.innerHTML += optionPotionName;
   })
   for (let i=1; i<=array.length; i++) {
-    const identificadorpocionId = document.getElementById(151-i)
+    const identificadorpocionId = document.getElementById(array.length+1-i)
     identificadorpocionId.addEventListener('click', function () {
       potion_instructions.innerHTML = array[i-1].description;
     });

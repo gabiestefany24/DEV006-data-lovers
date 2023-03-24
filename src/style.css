@@ -88,6 +88,9 @@ h2{
 #categories{
     margin-top:50px;
 }
+#categories img{
+    Opacity: 80%;
+}
 #categories button{
     width: 279px;
     height: 210px;
@@ -96,8 +99,8 @@ h2{
 }
 #categories h3{
     letter-spacing: 0.275em;
-    font-weight: 400;
-    font-size: 40px;
+    font-size: 50px;
+    color:#ffc773;
 }
 
 /*posicionamiento de cards categorias*/
