@@ -506,3 +506,26 @@ a {
     
 }
 
+#porcentagehouse1 h3{
+    
+    text-align: center;
+}
+    
+#imgestadistics{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+
+
+#imghouse1{
+    width: 301px;
+    height: 386px;
+}
+.contenedorporcentage1{
+    width: 440px;
+    height: 560px;
+    background-color: #271313;
+    border-radius: 30px;
+}
