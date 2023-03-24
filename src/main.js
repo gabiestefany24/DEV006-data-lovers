@@ -2,6 +2,7 @@ import { filterObj } from './data.js';
 
 import { sortObj } from './data.js';
 import { sortObjaz } from './data.js';
+import {porcentageObj} from './data.js';
 import data from './data/harrypotter/data.js';
 
 const character = data.characters;
@@ -16,12 +17,14 @@ const button_characterslytherin = document.getElementById("characterslytherin");
 const button_characterravenclaw = document.getElementById("characterravenclaw");
 const button_characterhufflepuff = document.getElementById("characterhufflepuff");
 const button_characterhomeless = document.getElementById("characterhomeless");
+const button_housegryffindor= document.getElementById("house1");
 
 const button_home = document.getElementById("inicio");
 const section_books = document.getElementById("section-books");
 const section_potions = document.getElementById("section-potions");
 const section_spell = document.getElementById("section-spell")
 const section_houses = document.getElementById("section-houses")
+const sectionhouse1 = document.getElementById("porcentagehouse1")
 const section_characters = document.getElementById("section-characters")
 const section_home = document.getElementById("categories")
 const button_characters = document.getElementById("personajes")
@@ -44,6 +47,7 @@ button_characterhufflepuff.addEventListener("click", FilterCharacter(hufflepuff)
 button_characterhomeless.addEventListener("click", FilterCharacter(none));
 button_sortZA.addEventListener ("click", SortPotionsZA());
 button_sortAZ.addEventListener ("click", SortPotionsAZ());
+button_housegryffindor.addEventListener("click",FilterHouse(griffindor));
 
 button_characters.addEventListener("click", SectionCharacters);
 button_books.addEventListener("click", SectionBooks);
@@ -65,6 +69,7 @@ function SectionHome() {
   section_spell.style.display = "none";
   section_books.style.display = "none";
   section_potions.style.display = "none";
+  sectionhouse1.style.display = "none";
 }
 
 const newcharacters = character;
@@ -76,6 +81,7 @@ function SectionCharacters() {
   section_houses.style.display = "none";
   section_home.style.display = "none";
   section_characters.style.display = "block";
+  sectionhouse1.style.display = "none";
 
   const getColor = function (p) {
     if (p.house === 'Gryffindor') {
@@ -259,12 +265,12 @@ function ShowCharacters(array) {
   document.head.appendChild(sheet);
 }
 
-function FilterCharacter(house) {
+function FilterCharacter(value) {
   return function () {
     contenedortarjetas.innerHTML = ""
-    const objectfiltrated = filterObj(newcharacters, house);
+    const objectfiltrated = filterObj(newcharacters, "house", value);
     ShowCharacters(objectfiltrated)
-    selectedhouse.innerHTML = house.toUpperCase() + " 🠋";
+    selectedhouse.innerHTML = value.toUpperCase() + " 🠋";
   }
 }
 
@@ -277,7 +283,31 @@ function SectionHouses() {
   section_home.style.display = "none";
   section_characters.style.display = "none";
   section_houses.style.display = "block";
+  sectionhouse1.style.display = "none";
 }
+
+
+function FilterHouse(value) {
+ return function(){
+  section_potions.style.display = "none";
+  section_spell.style.display = "none";
+  section_books.style.display = "none";
+  section_home.style.display = "none";
+  section_characters.style.display = "none";
+  section_houses.style.display = "none";
+  sectionhouse1.style.display = "block";
+
+    const objectfiltrated = filterObj(newcharacters, "house", value);
+    const genderfem= "Female"
+    const objectfilterfemale = filterObj(objectfiltrated, "gender", genderfem);
+    const porcentagefemale= porcentageObj(objectfiltrated.length, objectfilterfemale.length)
+
+    const porcentagemale= 100-porcentagefemale
+    console.log (porcentagemale)
+    console.log(porcentagefemale)
+    console.log(objectfiltrated.length)
+    console.log(objectfilterfemale.length)
+}}
 
 
 function SectionSpell() {
@@ -287,6 +317,7 @@ function SectionSpell() {
   section_characters.style.display = "none";
   section_houses.style.display = "none";
   section_potions.style.display = "none";
+  sectionhouse1.style.display = "none";
 }
 
 function SectionBooks() {
@@ -295,7 +326,8 @@ function SectionBooks() {
   section_home.style.display = "none";
   section_characters.style.display = "none";
   section_books.style.display = "block";
-  section_potions.style.display = "none"
+  section_potions.style.display = "none";
+  sectionhouse1.style.display = "none";
 }
 
 function SectionPotions() {
@@ -305,6 +337,7 @@ function SectionPotions() {
   section_characters.style.display = "none";
   section_books.style.display = "none";
   section_potions.style.display = "block";
+  sectionhouse1.style.display = "none";
   potion_instructions.innerHTML = "Seleccione una pocion";
   ShowPotions(data.potions);
 }
