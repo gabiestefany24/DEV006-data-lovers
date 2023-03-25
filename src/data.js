@@ -16,7 +16,6 @@ export const sortObjaz = (categories) => {
 
 export const porcentageObj = (objectfiltrated,objectfilterfemale ) => {
   const porcentagefemale =(objectfilterfemale*100)/objectfiltrated
-  
   return porcentagefemale;
   
 
