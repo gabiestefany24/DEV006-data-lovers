@@ -323,9 +323,9 @@ function SectionHouses() {
 
 
 function FilterHouse(value, section, porcentageman, porcentagewoman,numberstudents) {
- return function(){
-  section.style.display="block";
-  section_houses.style.display = "none";
+  return function(){
+    section.style.display="block";
+    section_houses.style.display = "none";
 
     const objectfiltrated = filterObj(newcharacters, "house", value);
     const genderfem= "Female"
@@ -338,7 +338,7 @@ function FilterHouse(value, section, porcentageman, porcentagewoman,numberstuden
     numberstudents.innerHTML=(objectfiltrated.length)
     
     
-}}
+  }}
 
 
 function SectionSpell() {
@@ -356,7 +356,7 @@ function SectionSpell() {
 function ShowSpell (array){
   let tarjetasSpell = ''
   array.forEach(s => {
-  const optionsspells=
+    const optionsspells=
       `<section class="spell1">
       <div class="bottom-spell">  
         <div class="spelldescription">
