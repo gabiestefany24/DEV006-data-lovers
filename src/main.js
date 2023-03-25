@@ -8,6 +8,20 @@ import data from './data/harrypotter/data.js';
 const character = data.characters;
 const contenedortarjetas = document.getElementById("contenedorcards");
 const contenedorpotions = document.getElementById("potions-name");
+const contenedorspells= document.getElementById("spellmain");
+const contenedorporcentageF= document.getElementById("porcentangeFnumber");
+const contenedorporcentageM= document.getElementById("porcentangeMnumber");
+const contenedorporcentageMS= document.getElementById("porcentangeMSnumber");
+const contenedorporcentageFS= document.getElementById("porcentangeFSnumber");
+const contenedorporcentageFR= document.getElementById("porcentangeFRnumber");
+const contenedorporcentageMR= document.getElementById("porcentangeMRnumber");
+const contenedorporcentageMH= document.getElementById("porcentangeMHnumber");
+const contenedorporcentageFH= document.getElementById("porcentangeFHnumber");
+const studentsnumber= document.getElementById("studentsnumber");
+const studentsSnumber= document.getElementById("studentsSnumber");
+const studentsRnumber= document.getElementById("studentsRnumber");
+const studentsHnumber= document.getElementById("studentsHnumber");
+
 
 const selectedhouse = document.getElementById("selectedhouse");
 const button_sortZA = document.getElementById("button-sortZA");
@@ -18,6 +32,10 @@ const button_characterravenclaw = document.getElementById("characterravenclaw");
 const button_characterhufflepuff = document.getElementById("characterhufflepuff");
 const button_characterhomeless = document.getElementById("characterhomeless");
 const button_housegryffindor= document.getElementById("house1");
+const button_houseslytherin= document.getElementById("house2");
+const button_houseravenclaw= document.getElementById("house3");
+const button_househufflepuff= document.getElementById("house4");
+
 
 const button_home = document.getElementById("inicio");
 const section_books = document.getElementById("section-books");
@@ -25,6 +43,9 @@ const section_potions = document.getElementById("section-potions");
 const section_spell = document.getElementById("section-spell")
 const section_houses = document.getElementById("section-houses")
 const sectionhouse1 = document.getElementById("porcentagehouse1")
+const sectionhouse2 = document.getElementById("porcentagehouse2")
+const sectionhouse3 = document.getElementById("porcentagehouse3")
+const sectionhouse4 = document.getElementById("porcentagehouse4")
 const section_characters = document.getElementById("section-characters")
 const section_home = document.getElementById("categories")
 const button_characters = document.getElementById("personajes")
@@ -47,7 +68,10 @@ button_characterhufflepuff.addEventListener("click", FilterCharacter(hufflepuff)
 button_characterhomeless.addEventListener("click", FilterCharacter(none));
 button_sortZA.addEventListener ("click", SortPotionsZA());
 button_sortAZ.addEventListener ("click", SortPotionsAZ());
-button_housegryffindor.addEventListener("click",FilterHouse(griffindor));
+button_housegryffindor.addEventListener("click",FilterHouse(griffindor,sectionhouse1,contenedorporcentageM, contenedorporcentageF,studentsnumber));
+button_houseslytherin.addEventListener("click",FilterHouse(slytherin,sectionhouse2, contenedorporcentageMS, contenedorporcentageFS, studentsSnumber ));
+button_houseravenclaw.addEventListener("click",FilterHouse(ravenclaw,sectionhouse3, contenedorporcentageMR, contenedorporcentageFR,studentsRnumber));
+button_househufflepuff.addEventListener("click",FilterHouse(hufflepuff,sectionhouse4, contenedorporcentageMH, contenedorporcentageFH, studentsHnumber));
 
 button_characters.addEventListener("click", SectionCharacters);
 button_books.addEventListener("click", SectionBooks);
@@ -70,6 +94,10 @@ function SectionHome() {
   section_books.style.display = "none";
   section_potions.style.display = "none";
   sectionhouse1.style.display = "none";
+  sectionhouse2.style.display = "none"; 
+  sectionhouse3.style.display = "none";
+  sectionhouse4.style.display = "none";
+
 }
 
 const newcharacters = character;
@@ -82,6 +110,10 @@ function SectionCharacters() {
   section_home.style.display = "none";
   section_characters.style.display = "block";
   sectionhouse1.style.display = "none";
+  sectionhouse2.style.display = "none"; 
+  sectionhouse3.style.display = "none"; 
+  sectionhouse4.style.display = "none";
+
 
   const getColor = function (p) {
     if (p.house === 'Gryffindor') {
@@ -284,18 +316,16 @@ function SectionHouses() {
   section_characters.style.display = "none";
   section_houses.style.display = "block";
   sectionhouse1.style.display = "none";
+  sectionhouse2.style.display = "none"; 
+  sectionhouse3.style.display = "none"; 
+  sectionhouse4.style.display = "none";
 }
 
 
-function FilterHouse(value) {
+function FilterHouse(value, section, porcentageman, porcentagewoman,numberstudents) {
  return function(){
-  section_potions.style.display = "none";
-  section_spell.style.display = "none";
-  section_books.style.display = "none";
-  section_home.style.display = "none";
-  section_characters.style.display = "none";
+  section.style.display="block";
   section_houses.style.display = "none";
-  sectionhouse1.style.display = "block";
 
     const objectfiltrated = filterObj(newcharacters, "house", value);
     const genderfem= "Female"
@@ -303,10 +333,11 @@ function FilterHouse(value) {
     const porcentagefemale= porcentageObj(objectfiltrated.length, objectfilterfemale.length)
 
     const porcentagemale= 100-porcentagefemale
-    console.log (porcentagemale)
-    console.log(porcentagefemale)
-    console.log(objectfiltrated.length)
-    console.log(objectfilterfemale.length)
+    porcentagewoman.innerHTML= Math.round(porcentagefemale)+ "% </br>"
+    porcentageman.innerHTML=Math.round(porcentagemale)+"%"
+    numberstudents.innerHTML=(objectfiltrated.length)
+    
+    
 }}
 
 
@@ -318,6 +349,25 @@ function SectionSpell() {
   section_houses.style.display = "none";
   section_potions.style.display = "none";
   sectionhouse1.style.display = "none";
+
+  ShowSpell(data.spells);
+}
+
+function ShowSpell (array){
+  let tarjetasSpell = ''
+  array.forEach(s => {
+  const optionsspells=
+      `<section class="spell1">
+      <div class="bottom-spell">  
+        <div class="spelldescription">
+          <h3>${s.name}</h3>
+          <h4>${s.description}</h4>
+        </div>
+      </div>
+    </section> `
+    tarjetasSpell += optionsspells;
+  });
+  contenedorspells.innerHTML= tarjetasSpell;
 }
 
 function SectionBooks() {

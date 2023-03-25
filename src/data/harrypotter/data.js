@@ -13616,7 +13616,7 @@ export default {
       "other_name": null,
       "pronunciation": null,
       "spell_type": "Dark Arts",
-      "description": "This spell allows a part of a wizard's soul to pass into an object, thereby making the object a Horcrux. One has to commit murder and take advantage of the soul's \"splitting apart\" by this supreme act of evil in order to be able to perform this spell, and it is probably very complex. In 1943, Horace Slughorn described the spell to a young Tom Riddle as encasing a portion of the torn soul and placing it within an object. The spell itself is described in detail in a banned book known as \"Secret of the Darkest Art\", which Hermione Granger summoned from Albus Dumbledore's office near the end of their sixth year. According to the text, use of this spell to separate the soul will make the remaining portion of the soul very fragile, and can only be reversed by \"remorse\" of the wrongs the creator had made; however, the pain caused by attempting to reverse the creation of a Horcrux can destroy the individual.",
+      "description": "This spell allows a part of a wizard's soul to pass into an object, thereby making the object a Horcrux.",
       "mention": "Used by Lord Voldemort while creating his Horcruxes.",
       "etymology": null,
       "note": null
