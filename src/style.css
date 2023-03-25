@@ -463,6 +463,7 @@ a {
     border:0px;
 }
 
+                                                        /*SECTION SPELLS*/
 #section-spell h2{
     font-weight: 400;
     font-size: 40px;
@@ -471,30 +472,40 @@ a {
     margin-top:-500px;
 }
 
+#section-spell h3{
+    font-weight: 420;
+    font-size: 45px;
+
+}
+
 .spellhermione{  
     width: 272px;
     height: 543px;
-    left: 34px;
+    left: 25px;
     position: -webkit-sticky;
     position: sticky;
     top: 0;
     margin-top: 50px;
+    
+   
 }
-.spellmain{
+#spellmain{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin-top:-60px;
+    margin-left: 200px;
 }
 .spelldescription{
     padding: 50px;
     margin: 50px;
+    margin-right: 5px;
     width: 70%;
     background-image: url("data/Images/pergamino.png");
     background-repeat:no-repeat;
-    width: 250px; 
-    height: 350px;
+    width: 400px; 
+    height: 490px;
     color:black;
     font-size: 20px;
     justify-content: center;
@@ -506,26 +517,89 @@ a {
     
 }
 
-#porcentagehouse1 h3{
+#porcentagehouse1 h3, #porcentagehouse2 h3, #porcentagehouse3 h3, #porcentagehouse4 h3 {
     
     text-align: center;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.275em;
 }
     
 #imgestadistics{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    gap: 80px;
 }
 
 
 
-#imghouse1{
-    width: 301px;
-    height: 386px;
+#porcentagehouse1 img, #porcentagehouse2 img, #porcentagehouse3 img, #porcentagehouse4 img {
+    width: 480px;
+    height: 620px;
 }
 .contenedorporcentage1{
     width: 440px;
-    height: 560px;
+    height: 620px;
     background-color: #271313;
     border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
+.contenedorporcentage2{
+    width: 440px;
+    height: 620px;
+    background-color: #112514;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedorporcentage3{
+    width: 440px;
+    height: 620px;
+    background-color: #0c1127;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedorporcentage4{
+    width: 440px;
+    height: 620px;
+    background-color: #975D1C;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titleporcentage{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.315em;
+}
+#porcentangeFnumber, #porcentangeMnumber, #porcentangeFSnumber, #porcentangeMSnumber, #porcentangeFRnumber, #porcentangeMRnumber, #porcentangeFHnumber, #porcentangeMHnumber, #studentsnumber, #studentsSnumber, #studentsRnumber, #studentsHnumber  {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 139px;
+    text-align: center;
+    letter-spacing: 0.315em;
+}
+
