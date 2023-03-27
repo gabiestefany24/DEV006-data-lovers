@@ -5,13 +5,26 @@ export const filterObj = (categories,keyoptions, value) => {
 };
 
 export const sortObj = (categories) => {
-  categories.sort((a,b) => a.name < b.name? 1:-1);
-  return categories;
+  const copy= [...categories]
+  copy.sort((a,b) => a.name < b.name? 1:-1);
+  return copy;
 };
 
 export const sortObjaz = (categories) => {
-  categories.sort((a,b) => a.name > b.name? 1:-1);
-  return categories;
+  const copy= [...categories]
+  copy.sort((a,b) => {
+    if (a.name > b.name){
+      return 1;
+    }
+    else if(a.name < b.name){
+      return -1;
+    }
+    else{
+      return 0;
+    }
+  });
+
+  return copy;
 };
 
 export const porcentageObj = (objectfiltrated,objectfilterfemale ) => {
