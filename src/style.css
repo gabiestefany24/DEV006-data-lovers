@@ -620,6 +620,7 @@ a {
 
 
 
+
                                        /*Responsive design*/
 
 
@@ -629,13 +630,10 @@ a {
         flex-direction: column;
         gap: 150px;
     }
-
-  
-    .nav-menu{
-        display: flex;
+    #nav-menu{
         z-index: 1;
         flex-direction: column;
-        width: 80%;
+        width: 0;
         text-align: center;
         transition: 0.3s;
         background-color: #18232d;
@@ -645,6 +643,12 @@ a {
         
 
     }
+    #nav-menu.active {
+       left:0;
+       top:0;
+       width: 80%;
+    }
+      
     .navegador form{
         top:10px;
         display: flex;
@@ -655,46 +659,28 @@ a {
 
     }
     .reproductor{
-
         display: flex;
         justify-content: center;
         position: relative;
         left:0;
-        
-
     }
-
-    .nav-menu.active {
-        left: 0;
-        top:0;
-
-    }
-
-
+   
     .icono {
         display: flex;
         cursor: context-menu;
-
     }
 
     a {
        border-bottom: 1px solid #ffc773; 
        width: 50%;
        margin:auto;
-
     }
-
     .buttonclose{
         display: flex;
         width: 40px;
         height: 42px;
         flex-direction: column;
         margin-left: 90%;
-        margin-top: 5%;
-
-      
+        margin-top: 5%;  
     }
-
-   
-
  }
