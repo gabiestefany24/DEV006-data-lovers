@@ -610,6 +610,7 @@ a {
     display: none;
 }
 
+
                                        /*Responsive design*/
 
 
@@ -620,12 +621,11 @@ a {
         gap: 150px;
     }
 
-  
-    .nav-menu{
+    #nav-menu{
         z-index: 1;
         position: fixed;
         flex-direction: column;
-        width: 80%;
+        width: 0;
         text-align: center;
         transition: 0.3s;
         background-color: #18232d;
@@ -634,6 +634,12 @@ a {
         gap:50px;
 
     }
+    #nav-menu.active {
+       left:0;
+       top:0;
+       width: 80%;
+    }
+      
     .navegador form{
         top:10px;
         display: flex;
@@ -644,31 +650,20 @@ a {
 
     }
     .reproductor{
-
         display: flex;
         justify-content: center;
         position: relative;
         left:0;
-        
-
     }
-    .nav-menu.active {
-        left: 0;
-        top:0;
-    }
-
+   
     .icono {
         display: flex;
-
     }
 
     a {
        border-bottom: 1px solid #ffc773; 
        line-height: 10px;
        width: 50%;
-       
-       
-
     }
 
  }
