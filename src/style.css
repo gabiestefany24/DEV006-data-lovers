@@ -609,16 +609,6 @@ a {
 .icono {
     display: none;
 }
-/*
-.nav-menu{
-    display: none;
-}*/
-
-.buttonclose{
-    display: none;
-}
-
-
 
 
                                        /*Responsive design*/
@@ -630,8 +620,10 @@ a {
         flex-direction: column;
         gap: 150px;
     }
+
     #nav-menu{
         z-index: 1;
+        position: fixed;
         flex-direction: column;
         width: 0;
         text-align: center;
@@ -640,7 +632,6 @@ a {
         height: 100%;
         justify-content: center;
         gap:50px;
-        
 
     }
     #nav-menu.active {
@@ -667,20 +658,13 @@ a {
    
     .icono {
         display: flex;
-        cursor: context-menu;
     }
 
     a {
        border-bottom: 1px solid #ffc773; 
+       line-height: 10px;
        width: 50%;
-       margin:auto;
     }
-    .buttonclose{
-        display: flex;
-        width: 40px;
-        height: 42px;
-        flex-direction: column;
-        margin-left: 90%;
-        margin-top: 5%;  
-    }
+
  }
+
