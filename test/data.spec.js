@@ -193,6 +193,11 @@ const pocionsTest = [
     "description": "A poisonous potion most likely taken from dragons."
   },
   {
+    "id": 44,
+    "name": "Dragon Poison",
+    "description": "A poisonous potion most likely taken from dragons."
+  },
+  {
     "id": 18,
     "name": "Blood-Replenishing Potion",
     "description": "A potion that replenishes the taker's blood if they have been injured and lost blood."
@@ -254,6 +259,11 @@ const pocionsTestza= [
     "description": "A poisonous potion most likely taken from dragons."
   },
   {
+    "id": 44,
+    "name": "Dragon Poison",
+    "description": "A poisonous potion most likely taken from dragons."
+  },
+  {
     "id": 18,
     "name": "Blood-Replenishing Potion",
     "description": "A potion that replenishes the taker's blood if they have been injured and lost blood."
@@ -277,6 +287,11 @@ const pocionsTestaz=[
     "id": 18,
     "name": "Blood-Replenishing Potion",
     "description": "A potion that replenishes the taker's blood if they have been injured and lost blood."
+  },
+  {
+    "id": 44,
+    "name": "Dragon Poison",
+    "description": "A poisonous potion most likely taken from dragons."
   },
   {
     "id": 44,
