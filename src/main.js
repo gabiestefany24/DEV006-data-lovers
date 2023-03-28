@@ -7,6 +7,7 @@ import data from './data/harrypotter/data.js';
 
 const hamburger= document.querySelector(".icono") 
 const navmenu=document.getElementById("nav-menu")
+const buttonclose=document.getElementById("close")
 
 const character = data.characters;
 const contenedortarjetas = document.getElementById("contenedorcards");
@@ -85,6 +86,9 @@ button_home.addEventListener("click", SectionHome);
 hamburger.addEventListener("click",()=>{
   navmenu.classList.toggle("active");
   
+});
+buttonclose.addEventListener("click",()=>{
+  navmenu.classList.toggle("active");
 });
 
 
