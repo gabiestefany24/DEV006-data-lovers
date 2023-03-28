@@ -6,7 +6,8 @@ import {porcentageObj} from './data.js';
 import data from './data/harrypotter/data.js';
 
 const hamburger= document.querySelector(".icono") 
-const navMenu=document.querySelector(".nav-menu")
+const navmenu=document.getElementById("nav-menu")
+
 const character = data.characters;
 const contenedortarjetas = document.getElementById("contenedorcards");
 const contenedorpotions = document.getElementById("potions-name");
@@ -82,8 +83,7 @@ button_houses.addEventListener("click", SectionHouses);
 button_spell.addEventListener("click", SectionSpell);
 button_home.addEventListener("click", SectionHome);
 hamburger.addEventListener("click",()=>{
-  hamburger.classList.toggle("active");
-  navMenu.classList.toggle("active");
+  navmenu.classList.toggle("active");
   
 });
 
