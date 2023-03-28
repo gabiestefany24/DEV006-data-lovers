@@ -532,7 +532,7 @@ a {
     letter-spacing: 0.275em;
 }
     
-#imgestadistics1,#imgestadistics2, #imgestadistics3 {
+#imgestadistics1,#imgestadistics2, #imgestadistics3, #imgestadistics {
     display: flex;
     flex-direction: row;
     justify-content: center;
