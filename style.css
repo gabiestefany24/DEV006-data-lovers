@@ -620,8 +620,9 @@ a {
     display:none;
 }
 
-                                       /*Responsive design*/
-
+     
+/*Responsive design*/
+/*
  @media screen and (max-width:1060px){
     .threecategories, .twocategories{
         display: flex;
@@ -717,8 +718,8 @@ a {
     }
 
  }
-
- @media screen and (max-width:800px){
+*/ 
+ @media screen and (max-width:1600px){
     
     #simbolo,#close{
         display:flex;
