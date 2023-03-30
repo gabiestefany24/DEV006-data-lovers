@@ -12065,7 +12065,7 @@ export default {
       "other_name": null,
       "pronunciation": "Ah-bare-toh",
       "spell_type": "Charm",
-      "description": null,
+      "description": "Creates an invisible magical barrier on an object, such as a door. This barrier bounces objects off of it, and muffles sounds",
       "mention": null,
       "etymology": null,
       "note": null

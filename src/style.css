@@ -288,6 +288,7 @@ a {
 }
 .containerbooks {
     display: flex;
+    flex-wrap: wrap;
     height: 430px;
     display:flex;
     width: 100%;
@@ -731,6 +732,7 @@ a {
     }
     
     .container-close{
+       margin-top:30%;
        margin-left: 80%;
     }
    
@@ -864,4 +866,35 @@ a {
     .spelldescription h4{
         font-size: 15px;
     }
+
+    .containerbooks {
+        display: flex;
+        flex-wrap: wrap;
+        height: 300px;
+        display:flex;
+        width: 100%;
+        justify-content: center;
+        margin-top:50px;
+    }
+    
+    .containerbooks img{
+        width: 100px;
+        flex-grow: 1;
+        object-fit: cover;
+        filter: grayscale(1);
+    }
+    
+    .containerbooks img:hover{
+        filter:none;
+        width: 200px;
+    }
+    .container-containerbooks{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+     }
+   .author{
+    width: 80%;
+    margin-top:-70px;
+   }
 }
