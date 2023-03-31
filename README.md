@@ -53,7 +53,8 @@ Version Desktop:
 
 Versión responsive:
 
-*El tamaño de la letra era demasiado grande por lo que las palabras salian de los limites de la pantalla.
+* En este set encontrarás una lista de los personajes,libros pociones
+  y hechizos de toda la saga deEl tamaño de la letra era demasiado grande por lo que las palabras salian de los limites de la pantalla.
 
 *Algunas imagenes ocupaban mucho tamaño, por lo que el usuario presentaba problemas de navegación al tener
 que desplegarse de manera horizontal para visualizaer toda la imagen.
