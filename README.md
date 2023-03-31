@@ -2,7 +2,7 @@
 
 ## Índice
 
-* [1. Resumen del Proyecto](#1-resumen-del-proyecto)
+* [1. Definición de Producto](#1-definicion-de-producto)
 * [2. Historias de Usuario](#2-historias-de-usuario)
 * [3. Prototipo de Baja Fidelidad](#3-prototipo-de-baja-fidelidad)
 * [4. Prototipo de Alta Fidelidad](#3-prototipo-de-alta-fidelidad)
@@ -10,14 +10,17 @@
 
 ***
 
-## 1. Resumen del Proyecto
+## 1. Definición del Producto
 
 En este proyecto se tiene como principal objetivo procesar data, desplegandola
 traves de una _interfaz_ amigable y entendible para el usuario. La forma en la que
 se proceso el conjunto de datos fue manipulandola para poder visualizarla, ordenarla
-y filtrarla. 
+y filtrarla, además de poder obtener un cálculo agregado. 
 
-La data elegida en este proyecto fue sobre Harry Potter.
+La data elegida en este proyecto fue sobre Harry Potter, por lo que estas funciones anteriormente
+mencionadas se presentan al usuario en una página web que contiene un diseño que evoque a las peliculas y libros de la franquicia,
+utilizando colores, imagenes y formas representativas, facilmente identificables para un fan o un espectador casual.
+
 
 ## 2. Historias de Usuario
 
@@ -25,8 +28,6 @@ La data elegida en este proyecto fue sobre Harry Potter.
 
 _"Yo como seguidora de la franquicia de Harry Potter, quiero visualizar un catálogo que me muestre categorías como personajes, casas, hechizos, pociones y libros , para complementar mis conocimientos como fan."_
 
-- [ ] Mercury
-- [x] Venus
 
 * HU 2. Filtrar data
 
@@ -61,7 +62,7 @@ A traves del feedback que recibimos, agregamos algunos cambios mostrados a conti
 
 ![img](src/data/images-readme/alta-categorias-responsive.png)
 
-El prototipo completo de alta fidelidad: link
+
 
 ## 5. Test de Usabilidad
 
@@ -87,3 +88,11 @@ Versión responsive:
   las imagenes sobrepuestas una sobre otra se acomodaban de diferente forma. 
 
 El proyecto fue iterando a traves de todos estos problemas detectados, dandoles solución y llegando asi a la versión final.
+
+## 5. Criterios minimos de aceptación:
+- [x] Cumple con los criterios minimos de 4 Historias de Usuario
+- [x] El proyecto no presenta errores de eslint
+- [x] Las pruebas unitarias cubren el 100% de statements, functions, lines y branches.
+- [x] El codigo esta subido al repositorio de GitHub.
+- [x] El proyecto esta desplegado en GitHub Pages
+- [x] El README contiene una definición del producto e Historias de Usuario.
