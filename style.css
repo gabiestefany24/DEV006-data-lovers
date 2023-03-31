@@ -1,0 +1,956 @@
+body {
+
+    background-color: #050e17;
+    font-family: 'Jost', sans-serif;
+    color: #ffc773;
+}
+
+header {
+    background-image: url("data/Images/hogwarts-family-wallpaper-1600x480_68.jpg");
+    background-repeat:no-repeat;
+    background-size: 100% 480px;
+
+    margin-top:-50px;
+    margin-left: -10px;
+    margin-right: -10px;
+    padding-top: 100px;
+}
+ 
+a {
+    text-decoration: none;
+    color:#ffc773;
+    letter-spacing: 0.275em;
+}
+
+.navegador{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+nav{
+    display:flex;
+    justify-content: space-around;
+    margin-top: -70px;
+    width:50vw;
+} 
+
+.categories {
+    letter-spacing: 0.27em;
+}
+
+.reproductor{
+    position:absolute;
+    left: 71px;
+    top: 450px;
+    cursor:pointer;
+}
+#music{
+    background-image: url("data/Images/reproducir-pausar.png");
+    background-size: 43px 49px;
+    border: 0;
+    width: 43px;
+    height: 49px;
+    background-repeat:no-repeat;
+    background-color: transparent;
+    
+}
+
+.harrypotter_titulo {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: -60px;
+    height: 284px;
+    align-items: center;
+    
+}
+
+h1{
+    font-size: 24px;
+    letter-spacing: 0.315em;
+
+}
+
+.bienvenido {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 180px;
+}
+
+.presentacion{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+h2{
+    font-size: 20px;
+    letter-spacing: 0.275em;
+}
+#categories{
+    margin-top:50px;
+}
+#categories img{
+    Opacity: 80%;
+}
+#categories button{
+    width: 279px;
+    height: 210px;
+    background-color: transparent;
+    border: 1px solid #FFC773;
+}
+#categories h3{
+    letter-spacing: 0.275em;
+    font-size: 50px;
+    color:#ffc773;
+}
+
+/*posicionamiento de cards categorias*/
+
+
+.threecategories img,.threecategories h3{
+    position: absolute;
+}
+.threecategories{
+    display: flex;
+    margin-top:100px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#personajes, #casas, #hechizos, #pociones, #libros{
+    cursor:pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.twocategories img, .twocategories h3{
+    position: absolute;
+}
+
+.twocategories {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 100px;
+}
+#potionazul{
+    margin-right: 7%;
+}
+#potionverde{
+    margin-left: 7%;
+    z-index:-1;
+}
+#potionrojo{
+    margin-top: 5%;
+}
+                                               /*SECTION CHARACTERS*/
+
+#section-characters h3{
+    font-weight: 400;
+    font-size: 18px;
+    position: absolute;
+    margin-left: 20px;
+    margin-top: 50px;
+    width: 100px;
+    letter-spacing: 0.275em;
+}
+
+.sections-title h2{
+    font-weight: 400;
+    font-size: 40px;
+}
+.sections-title{
+    display: flex;
+    margin-top:50px;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 50px;
+}
+
+/*MENU DE SELECCIONAR CASA PARA PERSONAJES*/
+
+
+a {
+    text-decoration: none;
+  }
+  
+  ul {
+    background: #18232D;
+    list-style: none;
+    margin: 0;
+    padding-left: 0;
+    
+  }
+  
+  li {
+    color: #fff;
+    background: #18232D;
+    display: block;
+    float: left;
+    padding: 1rem;
+    position: relative;
+    text-decoration: none;
+    transition-duration: 0.5s;
+  }
+    
+  li a {
+    color: #fff;
+  }
+  
+  li:hover,
+  li:focus-within {
+    background: #865b1a;
+    cursor: pointer;
+  }
+  
+  li:focus-within a {
+    outline: none;
+  }
+  
+  ul li ul {
+    visibility: hidden;
+    opacity: 0;
+    min-width: 5rem;
+    position: absolute;
+    transition: all 0.5s ease;
+    margin-top: 1rem;
+    left: 0;
+    display: none;
+  }
+  
+  ul li:hover > ul,
+  ul li:focus-within > ul,
+  ul li ul:hover,
+  ul li ul:focus {
+     visibility: visible;
+     opacity: 1;
+     display: block;
+  }
+  
+  ul li ul li {
+    clear: both;
+    width: 100%;
+  }
+
+#nav-select-house{
+    display:flex;
+    width: 100%;
+    justify-content: flex-end;
+}
+
+
+#select-house{
+    display:flex;
+    margin-right:200px;
+}
+
+
+.escudo{
+    display: flex;
+    align-items: flex-end;
+}
+#contenedorcards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap:120px;
+    margin-top: 80px;
+   
+}
+
+.bottom-card{
+    display:flex;
+    flex-direction: row;
+    gap: 50px;
+}
+.nombresection img{
+    display: flex;
+    flex-direction: column;
+    margin-top: 150px;
+    margin-left:-20px;
+    margin-left: -40px;
+}
+
+.nombresection h3{
+    margin-left:40%;
+    margin-top:50%;
+}
+
+                                            /*SECTION BOOKS*/
+
+.container-containerbooks{
+    margin: 70px;
+}
+.containerbooks {
+    display: flex;
+    flex-wrap: wrap;
+    height: 430px;
+    display:flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.containerbooks img{
+    width: 0px;
+    flex-grow: 1;
+    object-fit: cover;
+    filter: grayscale(1);
+}
+
+.containerbooks img:hover{
+    filter:none;
+    width: 300px;
+}
+.author h3{
+    display: flex;
+    font-weight: 400;
+    font-size: 24px;
+    margin: 20px;
+    text-align: center;
+    justify-content: right;
+}
+.author h4{
+    font-weight: 400;
+    font-size: 15px;
+    margin: 20px;
+    color: #FFFFFF;
+}
+
+.author{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.description{
+    width:500px;
+    height:98px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    background: rgba(58, 72, 78, 0.23);
+}
+
+                                            /*SECTION POCIONES*/
+
+#button-sortAZ{
+    background: #18232D;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    letter-spacing: 5px;
+    font-size: 20px;
+    margin-left: 220px;
+    
+
+}
+
+#button-sortZA{
+    background: #18232D;
+    color: #fff;
+    width: 200px;
+    height: 50px;
+    letter-spacing: 5px;
+    font-size: 20px;
+     
+}
+
+.potions-description{
+    width: 384px;
+    height: 374px;
+    background: transparent;
+    background-size: 100% 100%;
+    border: 0;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    text-align: center;
+    margin-top: -100px;
+
+}
+
+.container-fondopociones{
+    display: flex;
+    justify-content: center;
+}
+#fondopociones{
+    position: inherit;
+    margin-top:-700px;
+    margin-left:-300px;
+}
+
+#potions-name{
+    border-radius: 50px;
+    padding:10px;
+    background: linear-gradient(#050e17, #102131); 
+    overflow: hidden;
+    overflow-y: scroll;
+    height: 400px;
+    width: 400px;
+    
+
+}
+::-webkit-scrollbar{
+
+    width: 15px;
+    
+}
+::-webkit-scrollbar-thumb{
+    background-color:rgba(195, 204, 202, 0.988);
+    border-radius:15px;
+
+}
+
+#potions-name span{
+    display:flex;
+    font-weight: 400;
+    font-size: 25px;
+    color: #FFFFFF;
+    letter-spacing: 0.275em;
+    cursor: pointer;
+    margin:20px;  
+}
+
+.potions-threecolumns{
+    display:flex;
+    flex-direction: row; 
+    justify-content: space-around;
+    margin: 130px;
+}
+
+
+#potion-instructions{
+    font-size: 30px;
+    color: #FFFFFF;
+    text-align: center;
+    font-weight: 500;
+}
+
+#calderounit{
+   
+    position:absolute;
+    margin-left: 43%;
+    margin-top:-200px;
+    /*posicionar elemento absoluto detras de elemento relativo*/
+    z-index:-1;
+}
+
+                                            /*SECTION HOUSES*/
+
+#section-houses h2{
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 0.275em;
+    text-align: center;
+}
+
+.housesmain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 300px;
+    border: 0;
+    margin-bottom: 50px;
+    margin-top: 50px;
+  
+}
+
+.housenombresection h3{
+
+   font-weight: 400;
+   font-size: 24px;
+   letter-spacing:0.315em;
+   position: bottom;
+   justify-content: center;
+   align-items: center;
+   display: flex;
+    
+}
+
+.house1, .house2, .house3, .house4 {
+    border:0px;
+}
+
+                                                        /*SECTION SPELLS*/
+.sections-title h2, .sections-titlespell h2{
+    font-weight: 400;
+    font-size: 40px;
+    letter-spacing: 0.275em;
+    text-align: center;
+    
+}
+
+.sections-titlespell{
+    margin-top: -580px;
+}
+
+#section-spell h3{
+    font-weight: 420;
+    font-size: 45px;
+
+}
+
+.spellhermione{  
+    width: 272px;
+    height: 543px;
+    left: 25px;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    margin-top: 50px;
+    
+   
+}
+#spellmain{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top:-60px;
+    margin-left: 200px;
+}
+.spelldescription{
+    padding: 50px;
+    margin: 50px;
+    margin-right: 5px;
+    background-image: url("data/Images/pergamino.png");
+    
+    background-repeat:no-repeat;
+    width: 400px; 
+    height: 490px;
+    color:black;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+   
+    
+}
+
+#porcentagehouse1 h3, #porcentagehouse2 h3, #porcentagehouse3 h3, #porcentagehouse4 h3 {
+    
+    text-align: center;
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 40px;
+    line-height: 58px;
+    text-align: center;
+    letter-spacing: 0.275em;
+}
+    
+#imgestadistics1,#imgestadistics2, #imgestadistics3, #imgestadistics {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 80px;
+}
+
+#imagenunitgry,#imagenunitsly, #imagenunitrev, #imagenunithuff{
+    display:none;
+}
+
+
+
+#porcentagehouse1 img, #porcentagehouse2 img, #porcentagehouse3 img, #porcentagehouse4 img {
+    width: 480px;
+    height: 620px;
+}
+.contenedorporcentage1{
+    width: 440px;
+    height: 620px;
+    background-color: #271313;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.contenedorporcentage2{
+    width: 440px;
+    height: 620px;
+    background-color: #112514;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedorporcentage3{
+    width: 440px;
+    height: 620px;
+    background-color: #0c1127;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedorporcentage4{
+    width: 440px;
+    height: 620px;
+    background-color: #975D1C;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.titleporcentage{
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    letter-spacing: 0.315em;
+}
+#porcentangeFnumber, #porcentangeMnumber, #porcentangeFSnumber, #porcentangeMSnumber, #porcentangeFRnumber, #porcentangeMRnumber, #porcentangeFHnumber, #porcentangeMHnumber, #studentsnumber, #studentsSnumber, #studentsRnumber, #studentsHnumber  {
+    font-family: 'Jost';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 96px;
+    line-height: 139px;
+    text-align: center;
+    letter-spacing: 0.315em;
+}
+
+.icono {
+    display: none;
+}
+#simbolo,#close{
+    display:none;
+}
+
+                                       /*Responsive design*/
+
+ @media screen and (max-width:1060px){
+    .threecategories, .twocategories{
+        display: flex;
+        flex-direction: column;
+        gap: 150px;
+    }
+    .presentacion{
+        justify-content: center;
+        text-align: center;
+    }
+
+    
+
+    #nav-select-house{
+        justify-content: center;
+        width: 100%;
+        text-align: center;
+
+    }
+
+    #select-house{
+        margin-right: 0;
+    }
+
+    .bienvenido{
+        justify-content: center;
+        text-align: center;
+
+    }  
+
+    #imgestadistics3, #imgestadistics, #imgestadistics1, #imgestadistics2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+    }
+
+    #imagenunitgry, #imagenunitsly, #imagenunitrev, #imagenunithuff{
+        display: block;
+       
+    }
+   
+
+    
+
+    .contenedorporcentage1, .contenedorporcentage2, .contenedorporcentage3, .contenedorporcentage4{
+        margin-top: 1800px;
+        width: 70%;
+        height: 700px;
+        position: absolute;
+        padding-top: 200px;
+        background-color: transparent;
+        
+    }
+
+    #porcentagehouse1 img, #porcentagehouse2 img, #porcentagehouse3 img, #porcentagehouse4 img{
+        position: absolute;
+        margin-top:1400px;
+        width: 100%;
+        height: 1300px;
+
+    }
+
+    #imagenormalgry, #imagenormalsly, #imagenormalrev, #imagenormalhuff{
+        display: none;
+    }
+
+
+    
+    .line2houses{
+
+        margin-top: -290px;
+        
+    }
+
+    .housesmain{
+        flex-direction: column;
+    }
+}
+
+   
+
+ @media screen and (max-width:1100px)and (min-width:801px){
+    #nav-menu a{
+        display: flex;
+        margin-right: 50px;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .reproductor{
+        margin-top: 30px;
+        margin-left: -35px;
+    }
+
+ }
+
+ @media screen and (max-width:800px){
+    
+    #simbolo,#close{
+        display:flex;
+    }
+    #simbolo{
+        margin-top: 30px;
+    }
+    
+    .container-close{
+       margin-top:70%;
+       margin-left: 80%;
+    }
+   
+    #nav-menu{
+        right:-100%;
+        z-index: 2;
+        position: fixed;
+        flex-direction: column;
+        width: 0;
+        text-align: center;
+        transition: 0.6s;
+        background-color: #18232d;
+        justify-content: center;
+        gap:50px;
+        display: flex;
+        align-items: center;
+    }
+  
+
+
+    #nav-menu.active {
+       bottom: 0;
+       left:0;
+       top:0;
+       width: 70%;
+       
+    }
+      
+    .reproductor{
+        top:10px;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        left:0;
+        
+
+    }
+
+    .icono {
+        display: flex;
+        position: absolute;
+        margin-top: -50px;
+    }
+
+    #nav-menu a {
+       border-bottom: 1px solid #ffc773; 
+       line-height: 10px;
+       width: 50%;
+       padding: 5px;
+    }
+
+    #spellmain {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-top: -30px;
+        margin-left: 0;
+
+ }
+
+    .spell-title{
+        margin-top: 500px;
+    }
+
+
+    .spellhermione{
+            display: none;
+
+
+    }
+
+    .section-sort{
+            display: flex;
+            flex-direction: row;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+
+    }
+
+    #button-sortAZ{
+        margin-left: 0;
+    }
+
+    .sections-title, .sections-titlespell{
+        margin-top: -10px;
+    }
+
+    .description h4{
+        font-size: 9px;
+    }
+
+    .harrypotter_titulo img{
+        width: 284px;
+        height: 139px;
+    }
+
+    .bienvenido h1{
+        font-size: 18px;
+    }
+
+    #categories h3{
+
+        font-size: 30px;
+
+    }
+    #hechizos img{
+        width: 90%;
+    }
+    .spelldescription{
+        display:flex;
+        margin: 0px;
+        word-wrap: break-word;
+        object-fit: contain;
+        width: 70%;
+        background-size: 100% 100%;
+
+    }
+    #spellmain{
+        display:flex;
+        flex-direction: column;
+    }
+    #section-spell h3 {
+        font-weight: 420;
+        font-size: 30px;
+    }
+    .spelldescription h4{
+        font-size: 15px;
+    }
+
+    .containerbooks {
+        display: flex;
+        flex-wrap: wrap;
+        height: 300px;
+        display:flex;
+        width: 100%;
+        justify-content: center;
+        margin-top:50px;
+    }
+    
+    .containerbooks img{
+        width: 100px;
+        flex-grow: 1;
+        object-fit: cover;
+        filter: grayscale(1);
+    }
+    
+    .containerbooks img:hover{
+        filter:none;
+        width: 200px;
+    }
+    .container-containerbooks{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+     }
+   .author{
+    width: 80%;
+    margin-top:-70px;
+   }
+    .potions-threecolumns {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center ;
+        margin: 0px;
+    }
+    #potion-instructions {
+        font-size: 24px;
+    }
+    #potions-name{
+        width:95%
+    }
+
+    #calderounit{
+        position:absolute;
+        margin-left: 5%;
+        margin-top: 700px;
+        width: 90%;
+    
+        /*Clip-path: inset(0px 100px 0px 0px);*/
+    }
+  
+        /*posicionar elemento absoluto detras de elemento relativo*/
+  
+ 
+    .potions-description{
+        width: 90%;
+        height: 374px;
+        background: transparent;
+        background-size: 100% 100%;
+        border: 0;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0px;
+        text-align: center;
+        margin-top: 100px;;
+    }
+    .potion-instructions{
+        width: 90%;
+    }
+ }    
+
