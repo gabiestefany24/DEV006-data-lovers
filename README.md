@@ -7,7 +7,7 @@
 * [3. Prototipo de Baja Fidelidad](#3-prototipo-de-baja-fidelidad)
 * [4. Prototipo de Alta Fidelidad](#4-prototipo-de-alta-fidelidad)
 * [5. Test de Usabilidad](#5-test-de-usabilidad)
-* [6. Criterios minimos de aceptación](#6-criterios-minimos-de-aceptacion)
+* [6. Criterios Minimos de Aceptación](#6-criterios-minimos-de-aceptación)
 
 ***
 
@@ -91,7 +91,7 @@ Versión responsive:
 
 El proyecto fue iterando a traves de todos estos problemas detectados, dandoles solución y llegando asi a la versión final.
 
-## 6. Criterios minimos de aceptación
+## 6. Criterios Minimos de Aceptación
 
 - [x] Cumple con los criterios minimos de 4 Historias de Usuario
 - [x] El proyecto no presenta errores de eslint
