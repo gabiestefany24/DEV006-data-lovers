@@ -5,8 +5,9 @@
 * [1. Definición de Producto](#1-definicion-de-producto)
 * [2. Historias de Usuario](#2-historias-de-usuario)
 * [3. Prototipo de Baja Fidelidad](#3-prototipo-de-baja-fidelidad)
-* [4. Prototipo de Alta Fidelidad](#3-prototipo-de-alta-fidelidad)
-* [5. Test de Usabilidad](#3-test-de-usabilidad)
+* [4. Prototipo de Alta Fidelidad](#4-prototipo-de-alta-fidelidad)
+* [5. Test de Usabilidad](#5-test-de-usabilidad)
+* [6. Criterios minimos de aceptación](#6-criterios-minimos-de-aceptacion)
 
 ***
 
@@ -19,8 +20,9 @@ y filtrarla, además de poder obtener un cálculo agregado.
 
 La data elegida en este proyecto fue sobre Harry Potter, por lo que estas funciones anteriormente
 mencionadas se presentan al usuario en una página web que contiene un diseño que evoque a las peliculas y libros de la franquicia,
-utilizando colores, imagenes y formas representativas, facilmente identificables para un fan o un espectador casual.
+utilizando colores, imagenes y formas representativas, facilmente identificables para un fan o un espectador casual. 
 
+Por lo tanto, este proyecto pretende servir como un medio de consulta para un fan o un espectador casual, facilitando el acceso a diferentes topicos de la franquicia, para poder inmiscuirse en el mundo de harry potter.
 
 ## 2. Historias de Usuario
 
@@ -50,7 +52,7 @@ Los primeros prototipos de baja fidelidad, buscando una buena distribución de c
 
 A traves del feedback que recibimos, agregamos algunos cambios mostrados a continuación:
 
-![img](src/data/images-readme/baja-fidelidad2.jpg)
+![img](src/data/images-readme/baja-fidelidad2.png)
 
 ## 4. Prototipo de Alta Fidelidad
 
@@ -89,7 +91,8 @@ Versión responsive:
 
 El proyecto fue iterando a traves de todos estos problemas detectados, dandoles solución y llegando asi a la versión final.
 
-## 5. Criterios minimos de aceptación:
+## 6. Criterios minimos de aceptación
+
 - [x] Cumple con los criterios minimos de 4 Historias de Usuario
 - [x] El proyecto no presenta errores de eslint
 - [x] Las pruebas unitarias cubren el 100% de statements, functions, lines y branches.
