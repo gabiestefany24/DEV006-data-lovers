@@ -53,11 +53,11 @@ A traves del feedback que recibimos, agregamos algunos cambios mostrados a conti
 
 ## 4. Prototipo de Alta Fidelidad
 
-* [Version Desktop](https://www.figma.com/file/n0PUF45bqgsd5wmmd5KFt6?node-id=0:1&comments-enabled=1&viewer=1&locale=en)
+* Version Desktop[Link](https://www.figma.com/file/n0PUF45bqgsd5wmmd5KFt6?node-id=0:1&comments-enabled=1&viewer=1&locale=en)
 
 ![img](src/data/images-readme/alta-categorias.png)
 
-* [Version Responsive](https://www.figma.com/file/n0PUF45bqgsd5wmmd5KFt6?node-id=81:2&comments-enabled=1&viewer=1&locale=en)
+* Version Responsive[Link](https://www.figma.com/file/n0PUF45bqgsd5wmmd5KFt6?node-id=81:2&comments-enabled=1&viewer=1&locale=en)
 
 ![img](src/data/images-readme/alta-categorias-responsive.png)
 
