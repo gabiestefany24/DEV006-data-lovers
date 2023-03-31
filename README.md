@@ -22,7 +22,7 @@ La data elegida en este proyecto fue sobre Harry Potter, por lo que estas funcio
 mencionadas se presentan al usuario en una página web que contiene un diseño que evoque a las peliculas y libros de la franquicia,
 utilizando colores, imagenes y formas representativas, facilmente identificables para un fan o un espectador casual. 
 
-Por lo tanto, este proyecto pretende servir como un medio de consulta para un fan o un espectador casual, facilitando el acceso a diferentes topicos de la franquicia, para poder inmiscuirse en el mundo de harry potter.
+Por lo tanto, este producto pretende servir como un medio de consulta para un fan o un espectador casual, facilitando el acceso a diferentes topicos de la franquicia, para poder inmiscuirse en el mundo de harry potter.
 
 ## 2. Historias de Usuario
 
