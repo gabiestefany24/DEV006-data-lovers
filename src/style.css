@@ -914,11 +914,15 @@ a {
         flex-direction: column;
         justify-content: center;
         align-items: center ;
+        margin: 0px;
     }
     #potion-instructions {
-    font-size: 24px;
-
+        font-size: 24px;
     }
+    #potions-name{
+        width:95%
+    }
+
     #calderounit{
         position:absolute;
         margin-left: 5%;
@@ -941,11 +945,12 @@ a {
         display: flex;
         justify-content: center;
         align-items: center;
-        padding: 50px;
+        padding: 0px;
         text-align: center;
         margin-top: 100px;;
-    
     }
-
+    .potion-instructions{
+        width: 90%;
+    }
  }    
 
