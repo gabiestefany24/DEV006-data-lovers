@@ -915,17 +915,24 @@ a {
         justify-content: center;
         align-items: center ;
     }
-    #calderounit{
-        position:absolute;
-        margin-left: 10%;
-        margin-top: 800px;
-        /*posicionar elemento absoluto detras de elemento relativo*/
-        z-index:-1;
+    #potion-instructions {
+    font-size: 24px;
 
     }
-
+    #calderounit{
+        position:absolute;
+        margin-left: 5%;
+        margin-top: 700px;
+        width: 90%;
+    
+        /*Clip-path: inset(0px 100px 0px 0px);*/
+    }
+  
+        /*posicionar elemento absoluto detras de elemento relativo*/
+  
+ 
     .potions-description{
-        width: 384px;
+        width: 90%;
         height: 374px;
         background: transparent;
         background-size: 100% 100%;
