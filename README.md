@@ -56,7 +56,9 @@ Versión responsive:
 * El tamaño de la letra era demasiado grande por lo que las palabras salian de los limites de la 
   pantalla.
 * Algunas imagenes ocupaban mucho tamaño, por lo que el usuario presentaba problemas de navegación
- al tener que desplegarse de manera horizontal para visualizaer toda la imagen.
-*El icono x para cerrar el menu desplegable no era visible.
-*Se presentarón modificaciones de estilos al visualizar la página en diferentes dispositivos celulares:
+ al tener que desplegarse de manera horizontal para visualizar toda la imagen.
+
+* El icono x para cerrar el menu desplegable no era visible.
+
+* Se presentarón modificaciones de estilos al visualizar la página en diferentes dispositivos celulares:
   las imagenes sobrepuestas una sobre otra se acomodaban de diferente forma. 
