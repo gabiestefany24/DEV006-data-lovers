@@ -47,7 +47,7 @@ _"Yo como usuaria, quiero saber el promedio de mujeres y hombres, y el total de 
 
 Los primeros prototipos de baja fidelidad, buscando una buena distribución de cada uno de los elementos.
 
-![img](data/images-readme/baja-fidelidad.jpgbaja-fidelidad.jpg)
+![img](data/images-readme/baja-fidelidad.jpg)
 ![img](data/images-readme/baja-fidelidad-responsive.png)
 
 A través del feedback que recibimos, agregamos algunos cambios mostrados a continuación:
