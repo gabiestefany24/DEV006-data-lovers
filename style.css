@@ -1,3 +1,4 @@
+                                        /* ESTILOS PRINCIPALES*/
 body {
 
     background-color: #050e17;
@@ -106,7 +107,7 @@ h2{
     color:#ffc773;
 }
 
-/*posicionamiento de cards categorias*/
+                                                    /*CATEGORIAS DEL HOME*/
 
 
 .threecategories img,.threecategories h3{
@@ -170,7 +171,7 @@ h2{
     margin-bottom: 50px;
 }
 
-/*MENU DE SELECCIONAR CASA PARA PERSONAJES*/
+                                            /*MENU DE SELECCIONAR CASA PARA PERSONAJES*/
 
 
 a {
@@ -539,6 +540,8 @@ a {
     
 }
 
+                                        /* SECTION PORCENTAGE*/
+
 #porcentagehouse1 h3, #porcentagehouse2 h3, #porcentagehouse3 h3, #porcentagehouse4 h3 {
     
     text-align: center;
@@ -555,7 +558,8 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 80px;
+    gap: 60px;
+    align-items: center;
 }
 
 #imagenunitgry,#imagenunitsly, #imagenunitrev, #imagenunithuff{
@@ -636,7 +640,15 @@ a {
     display:none;
 }
 
-                                       /*Responsive design*/
+#myChart, #myChart2, #myChart3, #myChart4{
+    max-width: 800px;
+    max-height: 800px;
+    margin-right: -300px;
+    margin-left: -200px;
+}
+
+
+                                       /*RESPONSIVE DESIGN*/
 
  @media screen and (max-width:1060px){
     .threecategories, .twocategories{
@@ -679,9 +691,7 @@ a {
         display: block;
        
     }
-   
 
-    
 
     .contenedorporcentage1, .contenedorporcentage2, .contenedorporcentage3, .contenedorporcentage4{
         margin-top: 1800px;
@@ -764,8 +774,6 @@ a {
         align-items: center;
     }
   
-
-
     #nav-menu.active {
        bottom: 0;
        left:0;
@@ -928,12 +936,7 @@ a {
         margin-left: 5%;
         margin-top: 700px;
         width: 90%;
-    
-        /*Clip-path: inset(0px 100px 0px 0px);*/
     }
-  
-        /*posicionar elemento absoluto detras de elemento relativo*/
-  
  
     .potions-description{
         width: 90%;
