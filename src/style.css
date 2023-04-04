@@ -558,7 +558,8 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: center;
-    gap: 80px;
+    gap: 60px;
+    align-items: center;
 }
 
 #imagenunitgry,#imagenunitsly, #imagenunitrev, #imagenunithuff{
@@ -638,6 +639,14 @@ a {
 #simbolo,#close{
     display:none;
 }
+
+#myChart, #myChart2, #myChart3, #myChart4{
+    max-width: 800px;
+    max-height: 800px;
+    margin-right: -300px;
+    margin-left: -200px;
+}
+
 
                                        /*RESPONSIVE DESIGN*/
 
