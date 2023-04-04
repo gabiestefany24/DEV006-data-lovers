@@ -1,3 +1,4 @@
+
 import {
   filterObj,
   sortObj,
@@ -38,7 +39,7 @@ fetch("/src/data/harrypotter/harry.json")
     const studentsSnumber = document.getElementById("studentsSnumber");
     const studentsRnumber = document.getElementById("studentsRnumber");
     const studentsHnumber = document.getElementById("studentsHnumber");
-    const chart= document.getElementById("myChart");
+    
 
 
     const selectedhouse = document.getElementById("selectedhouse");
@@ -87,10 +88,10 @@ fetch("/src/data/harrypotter/harry.json")
     button_characterhomeless.addEventListener("click", FilterCharacter(none));
     button_sortZA.addEventListener("click", SortPotionsZA());
     button_sortAZ.addEventListener("click", SortPotionsAZ());
-    button_housegryffindor.addEventListener("click", FilterHouse(griffindor, sectionhouse1, contenedorporcentageM, contenedorporcentageF, studentsnumber));
-    button_houseslytherin.addEventListener("click", FilterHouse(slytherin, sectionhouse2, contenedorporcentageMS, contenedorporcentageFS, studentsSnumber));
-    button_houseravenclaw.addEventListener("click", FilterHouse(ravenclaw, sectionhouse3, contenedorporcentageMR, contenedorporcentageFR, studentsRnumber));
-    button_househufflepuff.addEventListener("click", FilterHouse(hufflepuff, sectionhouse4, contenedorporcentageMH, contenedorporcentageFH, studentsHnumber));
+    button_housegryffindor.addEventListener("click", FilterHouse(griffindor, sectionhouse1, contenedorporcentageM, contenedorporcentageF, studentsnumber, "myChart", "#474644", "#AE1325"));
+    button_houseslytherin.addEventListener("click", FilterHouse(slytherin, sectionhouse2, contenedorporcentageMS, contenedorporcentageFS, studentsSnumber, "myChart2", "#474644","#1F552A" ));
+    button_houseravenclaw.addEventListener("click", FilterHouse(ravenclaw, sectionhouse3, contenedorporcentageMR, contenedorporcentageFR, studentsRnumber, "myChart3", "#013962", "#474644" ));
+    button_househufflepuff.addEventListener("click", FilterHouse(hufflepuff, sectionhouse4, contenedorporcentageMH, contenedorporcentageFH, studentsHnumber, "myChart4", "#474644", "#AA860E"));
 
     button_characters.addEventListener("click", SectionCharacters);
     button_books.addEventListener("click", SectionBooks);
@@ -98,6 +99,7 @@ fetch("/src/data/harrypotter/harry.json")
     button_houses.addEventListener("click", SectionHouses);
     button_spell.addEventListener("click", SectionSpell);
     button_home.addEventListener("click", SectionHome);
+
     hamburger.addEventListener("click", () => {
       navmenu.classList.toggle("active");
 
@@ -389,7 +391,7 @@ fetch("/src/data/harrypotter/harry.json")
 
     /* Ejecutando función de filtrar personajes por casa y por genero */
 
-    function FilterHouse(value, section, porcentageman, porcentagewoman, numberstudents) {
+    function FilterHouse(value, section, porcentageman, porcentagewoman, numberstudents, chart, colorfemale, colormale) {
       return function () {
         section.style.display = "block";
         section_houses.style.display = "none";
@@ -405,8 +407,47 @@ fetch("/src/data/harrypotter/harry.json")
         porcentagewoman.innerHTML = Math.round(porcentagefemale) + "% </br>"
         porcentageman.innerHTML = Math.round(porcentagemale) + "%"
         numberstudents.innerHTML = (objectfiltrated.length)
+        
+        
+        
+        const xValues = [ "Male","Female"];
+        const yValues = [Math.round(porcentagemale),Math.round(porcentagefemale)];
+        const barColors = [
+          colormale,
+          colorfemale,
+        ];
+      
+        new Chart(chart,{
+          type: "doughnut",
+          data: {  
+                   
+            labels: xValues,
+                 
+            datasets: [{
+              backgroundColor: barColors,
+              data: yValues,
+             
+            }]
+          },
+          options: {
+            
+            title: {
+              fontSize: 25,
+              fontColor: "#D0CFCF",
 
-
+              display: true,
+              text: (value.toUpperCase() + " GENDER STATISTICS")
+            },
+            legend: { 
+              display: true,
+              labels:{
+                fontSize: 25, //change the size of the labels
+                fontColor: "#D0CFCF",
+              }
+            }
+            
+          }
+        });
       }
     }
 
@@ -481,39 +522,13 @@ fetch("/src/data/harrypotter/harry.json")
       }
     }
 
-    const xValues = ["Italy", "France", "Spain", "USA", "Argentina"];
-    const yValues = [55, 49, 44, 24, 15];
-    const barColors = [
-      "#b91d47",
-      "#00aba9",
-      "#2b5797",
-      "#e8c3b9",
-      "#1e7145"
-    ];
-
-    new Chart (chart, {
-      type: "pie",
-      data: {
-        labels: xValues,
-        datasets: [{
-          backgroundColor: barColors,
-          data: yValues
-        }]
-      },
-      options: {
-        title: {
-          display: true,
-          text: "World Wide Wine Production 2018"
-        }
-      }
-    });
+ 
 
 
+    
 
 
-
-
-
+    
 
 
 
@@ -521,3 +536,15 @@ fetch("/src/data/harrypotter/harry.json")
     // aqui termina el alcance del segundo then del fetch al JSON
 
   });
+
+
+
+
+
+
+
+
+
+
+
+  
