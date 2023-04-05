@@ -10,7 +10,7 @@ import {
 
 
 
-fetch("/src/data/harrypotter/harry.json")
+fetch("./data/harrypotter/harry.json")
   .then((res) => res.json())
   .then((data) => {
 
