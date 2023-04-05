@@ -909,7 +909,9 @@ a {
         display:flex;
         width: 100%;
         justify-content: center;
-        margin-top:50px;
+        margin-top: 90px;
+        align-items: center;
+        height: 2000px;
     }
     
     .containerbooks img{
@@ -917,6 +919,7 @@ a {
         flex-grow: 1;
         object-fit: cover;
         filter: grayscale(1);
+      
     }
     
     .containerbooks img:hover{
@@ -972,6 +975,7 @@ a {
 
     .containerbooks{
         gap: 20px;
+        flex-direction: column;
     }
  }    
 
