@@ -430,6 +430,10 @@ fetch("./data/harrypotter/harry.json")
             }]
           },
           options: {
+            data:{
+              fontSize: 25,
+              fontColor: "#D0CFCF",
+            },
             
             title: {
               fontSize: 25,

@@ -289,7 +289,7 @@ a {
 }
 .containerbooks {
     display: flex;
-    flex-wrap: wrap;
+    /*flex-wrap: wrap;*/
     height: 430px;
     display:flex;
     width: 100%;
@@ -660,9 +660,7 @@ a {
         justify-content: center;
         text-align: center;
     }
-
-    
-
+  
     #nav-select-house{
         justify-content: center;
         width: 100%;
@@ -726,6 +724,17 @@ a {
     .housesmain{
         flex-direction: column;
     }
+
+    #myChart, #myChart2, #myChart3, #myChart4{
+        max-width: 100%;
+        justify-content: center;
+        margin-top: 3300px;
+        position: absolute;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+
 }
 
    
@@ -743,7 +752,13 @@ a {
         margin-left: -35px;
     }
 
+    .containerbooks{
+        gap: 20px;
+    }
+
  }
+
+
 
  @media screen and (max-width:800px){
     
@@ -890,7 +905,6 @@ a {
 
     .containerbooks {
         display: flex;
-        flex-wrap: wrap;
         height: 300px;
         display:flex;
         width: 100%;
@@ -954,6 +968,10 @@ a {
     }
     .potion-instructions{
         width: 90%;
+    }
+
+    .containerbooks{
+        gap: 20px;
     }
  }    
 
