@@ -10,7 +10,7 @@ import {
 
 
 
-fetch("/src/data/harrypotter/harry.json")
+fetch("./data/harrypotter/harry.json")
   .then((res) => res.json())
   .then((data) => {
 
@@ -430,6 +430,10 @@ fetch("/src/data/harrypotter/harry.json")
             }]
           },
           options: {
+            data:{
+              fontSize: 25,
+              fontColor: "#D0CFCF",
+            },
             
             title: {
               fontSize: 25,
@@ -542,9 +546,3 @@ fetch("/src/data/harrypotter/harry.json")
 
 
 
-
-
-
-
-
-  
