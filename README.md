@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Data Lovers
 
 ## Índice
@@ -103,3 +104,7 @@ El proyecto fue iterado a través de todos estos problemas detectados, dandoles 
 - [x] El código esta en el repositorio de GitHub
 - [x] El proyecto esta desplegado en GitHub Pages
 - [x] El README contiene una definición del producto e Historias de Usuario
+=======
+# DEV006-data-lovers
+Repositorio segundo proyecto para cohort DEV006
+>>>>>>> d33363137f6d4bf1bb7deeed075776a8f79e778f
