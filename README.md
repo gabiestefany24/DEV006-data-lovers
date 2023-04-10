@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # Data Lovers
 
 ## Índice
@@ -50,22 +49,22 @@ En esta HU se pudo trabajar con las librerias de charts para plasmar los resulta
 
 Los primeros prototipos de baja fidelidad, buscando una buena distribución de cada uno de los elementos.
 
-![img](src/data/images-readme/baja-fidelidad.jpg)
-![img](src/data/images-readme/baja-fidelidad-responsive.png)
+![img](/data/images-readme/baja-fidelidad.jpg)
+![img](/data/images-readme/baja-fidelidad-responsive.png)
 
 A través del feedback que recibimos, agregamos algunos cambios mostrados a continuación:
 
-![img](src/data/images-readme/baja-fidelidad2.png)
+![img](/data/images-readme/baja-fidelidad2.png)
 
 ## 4. Prototipo de Alta Fidelidad
 
 * Versión Desktop: [Link](https://www.figma.com/file/n0PUF45bqgsd5wmmd5KFt6?node-id=0:1&comments-enabled=1&viewer=1&locale=en)
 
-![img](src/data/images-readme/alta-categorias.png)
+![img](/data/images-readme/alta-categorias.png)
 
 * Versión Responsive: [Link](https://www.figma.com/file/n0PUF45bqgsd5wmmd5KFt6?node-id=81:2&comments-enabled=1&viewer=1&locale=en)
 
-![img](src/data/images-readme/alta-categorias-responsive.png)
+![img](/data/images-readme/alta-categorias-responsive.png)
 
 
 
@@ -104,7 +103,4 @@ El proyecto fue iterado a través de todos estos problemas detectados, dandoles 
 - [x] El código esta en el repositorio de GitHub
 - [x] El proyecto esta desplegado en GitHub Pages
 - [x] El README contiene una definición del producto e Historias de Usuario
-=======
-# DEV006-data-lovers
-Repositorio segundo proyecto para cohort DEV006
->>>>>>> d33363137f6d4bf1bb7deeed075776a8f79e778f
+
